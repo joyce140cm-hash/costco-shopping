@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>好市多採購清單</title>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+const CATEGORIES = [
+  { id: "fruit", label: "🍎 水果", items: ["芭樂", "香蕉"] },
+  { id: "frozen", label: "🥩 冷凍食品／蛋白質", items: ["鮭魚切片", "水餃"] },
+  { id: "veg", label: "🥦 蔬菜", items: ["地瓜", "冷凍花椰菜", "玉米", "紅蘿蔔"] },
+  { id: "fridge", label: "🥚 冰箱常備", items: ["雞蛋", "豆漿", "牛奶", "優格"] },
+  { id: "staple", label: "🍚 主食乾糧", items: ["白米", "燕麥片", "吐司"] },
+  { id: "seasoning", label: "🧂 調味／其他", items: ["橄欖油", "醬油"] },
+  { id: "snack", label: "🍿 零食", items: ["堅果", "餅乾"] },
+];
+
+const STORAGE_KEY = "costco_items";
+const HISTORY_KEY = "costco_history";
+const BUDGET_KEY = "costco_budget";
+
+function initItems() {
+  const items = {};
+  CATEGORIES.forEach(cat => {
+    cat.items.forEach(name => {
+      items[cat.id + "_" + name] = { name, category: cat.id, checked: false, price: "" };
+    });
+  });
+  return items;
+}
+
+function App() {
+  const [items, setItems] = useState(() => {
+    try { const s = localStorage.getItem(STORAGE_KEY); return s ? JSON.parse(s) : initItems(); } catch { return initItems(); }
+  });
+  const [budget, setBudget] = useState(() => localStorage.getItem(BUDGET_KEY) || "");
+  const [history, setHistory] = useState(() => {
+    try { const s = localStorage.getItem(HISTORY_KEY); return s ? JSON.parse(s) : []; } catch { return []; }
+  });
+  const [tab, setTab] = useState("shopping");
+  const [newName, setNewName] = useState("");
+  const [newCat, setNewCat] = useState("fruit");
+  const [showAdd, setShowAdd] = useState(false);
+  const [saved, setSaved] = useState(false);
+
+  const total = Object.values(items).filter(i => i.checked && i.price).reduce((s, i) => s + (parseFloat(i.price) || 0), 0);
+  const budgetNum = parseFloat(budget) || 0;
+  const over = budgetNum > 0 && total > budgetNum;
+  const pct = budgetNum > 0 ? Math.min((total / budgetNum) * 100, 100) : 0;
+
+  useEffect(() => { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch {} }, [items]);
+  useEffect(() => { try { localStorage.setItem(BUDGET_KEY, budget); } catch {} }, [budget]);
+
+  const toggle = k => setItems(p => ({ ...p, [k]: { ...p[k], checked: !p[k].checked } }));
+  const setPrice = (k, v) => setItems(p => ({ ...p, [k]: { ...p[k], price: v } }));
+
+  function addItem() {
+    if (!newName.trim()) return;
+    const k = newCat + "_" + newName.trim() + "_" + Date.now();
+    setItems(p => ({ ...p, [k]: { name: newName.trim(), category: newCat, checked: true, price: "" } }));
+    setNewName(""); setShowAdd(false);
+  }
+
+  function finish() {
+    const bought = Object.values(items).filter(i => i.checked && i.price);
+    if (!bought.length) return;
+    const rec = { date: new Date().toLocaleDateString("zh-TW"), total, budget: budgetNum, items: bought.map(i => ({ name: i.name, price: parseFloat(i.price) })) };
+    const h = [rec, ...history].slice(0, 20);
+    setHistory(h);
+    try { localStorage.setItem(HISTORY_KEY, JSON.stringify(h)); } catch {}
+    setItems(initItems()); setSaved(true); setTimeout(() => setSaved(false), 2500);
+  }
+
+  const s = { fontFamily: "sans-serif", maxWidth: 480, margin: "0 auto", background: "#f7f8fa", minHeight: "100vh" };
+
+  return (
+    <div style={s}>
+      <div style={{ background: "#d42b2b", padding: "18px 20px 14px", color: "#fff" }}>
+        <div style={{ fontSize: 11, letterSpacing: 2, opacity: 0.8 }}>COSTCO 採購紀錄</div>
+        <div style={{ fontSize: 22, fontWeight: 700 }}>好市多購物清單</div>
+      </div>
+      <div style={{ display: "flex", background: "#fff", borderBottom: "2px solid #eee" }}>
+        {["shopping","history"].map(t => (
+          <button key={t} onClick={() => setTab(t)} style={{ flex:1, padding:"12px 0", border:"none", background:"none", cursor:"pointer", fontWeight: tab===t?700:400, color: tab===t?"#d42b2b":"#888", borderBottom: tab===t?"2px solid #d42b2b":"2px solid transparent", fontSize:14, marginBottom:-2 }}>
+            {t === "shopping" ? "📋 本次採買" : "📂 歷史紀錄"}
+          </button>
+        ))}
+      </div>
+
+      {tab === "shopping" && (
+        <div style={{ padding: "16px 16px 100px" }}>
+          <div style={{ background:"#fff", borderRadius:12, padding:16, marginBottom:14, boxShadow:"0 1px 4px rgba(0,0,0,0.07)" }}>
+            <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:10 }}>
+              <span style={{ fontSize:13, color:"#555", whiteSpace:"nowrap" }}>預算上限</span>
+              <div style={{ display:"flex", alignItems:"center", flex:1, background:"#f7f8fa", borderRadius:8, padding:"6px 10px" }}>
+                <span style={{ color:"#888", fontSize:13, marginRight:4 }}>NT$</span>
+                <input type="number" placeholder="輸入預算" value={budget} onChange={e => setBudget(e.target.value)} style={{ border:"none", background:"none", fontSize:14, width:"100%", outline:"none" }} />
+              </div>
+            </div>
+            {budgetNum > 0 && <div style={{ marginBottom:10 }}><div style={{ height:6, background:"#eee", borderRadius:99 }}><div style={{ height:6, borderRadius:99, background: over?"#e53935":pct>80?"#fb8c00":"#43a047", width:`${pct}%`, transition:"width 0.3s" }} /></div></div>}
+            <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center" }}>
+              <span style={{ fontSize:13, color:"#888" }}>目前花費</span>
+              <span style={{ fontSize:24, fontWeight:800, color: over?"#e53935":"#222" }}>NT$ {total.toLocaleString()}{over && <span style={{ fontSize:12, marginLeft:6, color:"#e53935" }}>超出預算！</span>}</span>
+            </div>
+            {budgetNum > 0 && !over && <div style={{ textAlign:"right", fontSize:12, color:"#888", marginTop:2 }}>還剩 NT$ {(budgetNum-total).toLocaleString()}</div>}
+          </div>
+
+          {CATEGORIES.map(cat => {
+            const catItems = Object.entries(items).filter(([,v]) => v.category === cat.id);
+            if (!catItems.length) return null;
+            return (
+              <div key={cat.id} style={{ background:"#fff", borderRadius:12, marginBottom:10, overflow:"hidden", boxShadow:"0 1px 4px rgba(0,0,0,0.06)" }}>
+                <div style={{ padding:"10px 14px", background:"#fafafa", borderBottom:"1px solid #f0f0f0", fontSize:13, fontWeight:700, color:"#444" }}>{cat.label}</div>
+                {catItems.map(([k, item]) => (
+                  <div key={k} style={{ padding:"10px 14px", borderBottom:"1px solid #f5f5f5", display:"flex", gap:10, alignItems:"center" }}>
+                    <input type="checkbox" checked={item.checked} onChange={() => toggle(k)} style={{ width:18, height:18, accentColor:"#d42b2b", cursor:"pointer", flexShrink:0 }} />
+                    <span style={{ flex:1, fontSize:14, color: item.checked?"#222":"#aaa", textDecoration: item.checked?"none":"line-through" }}>{item.name}</span>
+                    {item.checked && (
+                      <div style={{ display:"flex", alignItems:"center", background:"#f7f8fa", borderRadius:8, padding:"4px 8px", gap:2 }}>
+                        <span style={{ fontSize:12, color:"#888" }}>NT$</span>
+                        <input type="number" placeholder="金額" value={item.price} onChange={e => setPrice(k, e.target.value)} style={{ border:"none", background:"none", width:70, fontSize:13, outline:"none" }} />
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            );
+          })}
+
+          <div style={{ background:"#fff", borderRadius:12, padding:14, marginBottom:14, boxShadow:"0 1px 4px rgba(0,0,0,0.06)" }}>
+            {!showAdd ? (
+              <button onClick={() => setShowAdd(true)} style={{ width:"100%", padding:10, border:"2px dashed #ddd", borderRadius:8, background:"none", color:"#888", fontSize:14, cursor:"pointer" }}>＋ 新增品項</button>
+            ) : (
+              <div style={{ display:"flex", flexDirection:"column", gap:8 }}>
+                <select value={newCat} onChange={e => setNewCat(e.target.value)} style={{ padding:"8px 10px", borderRadius:8, border:"1px solid #ddd", fontSize:13 }}>
+                  {CATEGORIES.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}
+                </select>
+                <input placeholder="品項名稱" value={newName} onChange={e => setNewName(e.target.value)} onKeyDown={e => e.key==="Enter" && addItem()} style={{ padding:"8px 10px", borderRadius:8, border:"1px solid #ddd", fontSize:14 }} />
+                <div style={{ display:"flex", gap:8 }}>
+                  <button onClick={addItem} style={{ flex:1, padding:8, background:"#d42b2b", color:"#fff", border:"none", borderRadius:8, fontSize:14, cursor:"pointer" }}>新增</button>
+                  <button onClick={() => setShowAdd(false)} style={{ flex:1, padding:8, background:"#eee", color:"#555", border:"none", borderRadius:8, fontSize:14, cursor:"pointer" }}>取消</button>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <button onClick={finish} style={{ width:"100%", padding:16, background:"#d42b2b", color:"#fff", border:"none", borderRadius:12, fontSize:16, fontWeight:700, cursor:"pointer", boxShadow:"0 2px 8px rgba(212,43,43,0.3)" }}>✅ 結束採買，儲存紀錄</button>
+          {saved && <div style={{ textAlign:"center", marginTop:10, color:"#43a047", fontWeight:600, fontSize:14 }}>✓ 已儲存！清單已重置</div>}
+        </div>
+      )}
+
+      {tab === "history" && (
+        <div style={{ padding:"16px 16px 40px" }}>
+          {!history.length ? (
+            <div style={{ textAlign:"center", color:"#aaa", padding:40, fontSize:14 }}>還沒有採買紀錄<br/>完成第一次採買後會顯示在這裡</div>
+          ) : history.map((r, i) => (
+            <div key={i} style={{ background:"#fff", borderRadius:12, marginBottom:12, overflow:"hidden", boxShadow:"0 1px 4px rgba(0,0,0,0.07)" }}>
+              <div style={{ padding:"12px 14px", display:"flex", justifyContent:"space-between", alignItems:"center", borderBottom:"1px solid #f0f0f0" }}>
+                <div>
+                  <div style={{ fontWeight:700, fontSize:15 }}>{r.date}</div>
+                  {r.budget > 0 && <div style={{ fontSize:11, color: r.total>r.budget?"#e53935":"#43a047", marginTop:2 }}>預算 NT$ {r.budget.toLocaleString()} · {r.total>r.budget?"超出":"未超出"}</div>}
+                </div>
+                <span style={{ fontSize:18, fontWeight:800, color:"#d42b2b" }}>NT$ {r.total.toLocaleString()}</span>
+              </div>
+              <div style={{ padding:"10px 14px" }}>
+                {r.items.map((item, j) => (
+                  <div key={j} style={{ display:"flex", justifyContent:"space-between", fontSize:13, padding:"3px 0", color:"#555" }}>
+                    <span>{item.name}</span><span>NT$ {item.price.toLocaleString()}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
