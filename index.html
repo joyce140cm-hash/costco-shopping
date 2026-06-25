@@ -13,167 +13,190 @@
 <script type="text/babel">
 const { useState, useEffect } = React;
 
-const CATEGORIES = [
-  { id: "fruit", label: "🍎 水果", items: ["芭樂", "香蕉"] },
-  { id: "frozen", label: "🥩 冷凍食品／蛋白質", items: ["鮭魚切片", "水餃"] },
-  { id: "veg", label: "🥦 蔬菜", items: ["地瓜", "冷凍花椰菜", "玉米", "紅蘿蔔"] },
-  { id: "fridge", label: "🥚 冰箱常備", items: ["雞蛋", "豆漿", "牛奶", "優格"] },
-  { id: "staple", label: "🍚 主食乾糧", items: ["白米", "燕麥片", "吐司"] },
-  { id: "seasoning", label: "🧂 調味／其他", items: ["橄欖油", "醬油"] },
-  { id: "snack", label: "🍿 零食", items: ["堅果", "餅乾"] },
-];
+const CATEGORIES = ["水果","常溫食品","冷凍食品","冷藏食品","零食","用品","衣物","玩具","電器","其他"];
+const CAT_EMOJI = {"水果":"🍎","常溫食品":"🥫","冷凍食品":"🧊","冷藏食品":"🥛","零食":"🍿","用品":"🧴","衣物":"👕","玩具":"🧸","電器":"🔌","其他":"📦"};
+const HISTORY_KEY = "costco_v2_history";
 
-const STORAGE_KEY = "costco_items";
-const HISTORY_KEY = "costco_history";
-const BUDGET_KEY = "costco_budget";
-
-function initItems() {
-  const items = {};
-  CATEGORIES.forEach(cat => {
-    cat.items.forEach(name => {
-      items[cat.id + "_" + name] = { name, category: cat.id, checked: false, price: "" };
-    });
-  });
-  return items;
+function loadHistory() {
+  try { const s = localStorage.getItem(HISTORY_KEY); return s ? JSON.parse(s) : []; } catch { return []; }
 }
 
 function App() {
-  const [items, setItems] = useState(() => {
-    try { const s = localStorage.getItem(STORAGE_KEY); return s ? JSON.parse(s) : initItems(); } catch { return initItems(); }
-  });
-  const [budget, setBudget] = useState(() => localStorage.getItem(BUDGET_KEY) || "");
-  const [history, setHistory] = useState(() => {
-    try { const s = localStorage.getItem(HISTORY_KEY); return s ? JSON.parse(s) : []; } catch { return []; }
-  });
+  const [items, setItems] = useState([]);
+  const [budget, setBudget] = useState("");
+  const [history, setHistory] = useState(loadHistory);
   const [tab, setTab] = useState("shopping");
-  const [newName, setNewName] = useState("");
-  const [newCat, setNewCat] = useState("fruit");
-  const [showAdd, setShowAdd] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [form, setForm] = useState({ cat: "水果", name: "", qty: "1", price: "" });
+  const [showForm, setShowForm] = useState(false);
+  const [editId, setEditId] = useState(null);
 
-  const total = Object.values(items).filter(i => i.checked && i.price).reduce((s, i) => s + (parseFloat(i.price) || 0), 0);
+  const total = items.reduce((s, i) => s + (parseFloat(i.price)||0) * (parseInt(i.qty)||1), 0);
   const budgetNum = parseFloat(budget) || 0;
   const over = budgetNum > 0 && total > budgetNum;
-  const pct = budgetNum > 0 ? Math.min((total / budgetNum) * 100, 100) : 0;
-
-  useEffect(() => { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch {} }, [items]);
-  useEffect(() => { try { localStorage.setItem(BUDGET_KEY, budget); } catch {} }, [budget]);
-
-  const toggle = k => setItems(p => ({ ...p, [k]: { ...p[k], checked: !p[k].checked } }));
-  const setPrice = (k, v) => setItems(p => ({ ...p, [k]: { ...p[k], price: v } }));
+  const pct = budgetNum > 0 ? Math.min((total/budgetNum)*100, 100) : 0;
 
   function addItem() {
-    if (!newName.trim()) return;
-    const k = newCat + "_" + newName.trim() + "_" + Date.now();
-    setItems(p => ({ ...p, [k]: { name: newName.trim(), category: newCat, checked: true, price: "" } }));
-    setNewName(""); setShowAdd(false);
+    if (!form.name.trim()) return;
+    if (editId !== null) {
+      setItems(prev => prev.map(i => i.id === editId ? { ...i, ...form } : i));
+      setEditId(null);
+    } else {
+      setItems(prev => [...prev, { ...form, id: Date.now() }]);
+    }
+    setForm({ cat: form.cat, name: "", qty: "1", price: "" });
+    setShowForm(false);
+  }
+
+  function deleteItem(id) { setItems(prev => prev.filter(i => i.id !== id)); }
+
+  function startEdit(item) {
+    setForm({ cat: item.cat, name: item.name, qty: item.qty, price: item.price });
+    setEditId(item.id); setShowForm(true);
   }
 
   function finish() {
-    const bought = Object.values(items).filter(i => i.checked && i.price);
-    if (!bought.length) return;
-    const rec = { date: new Date().toLocaleDateString("zh-TW"), total, budget: budgetNum, items: bought.map(i => ({ name: i.name, price: parseFloat(i.price) })) };
+    if (!items.length) return;
+    const rec = { date: new Date().toLocaleDateString("zh-TW"), total, budget: budgetNum, items: items.map(i => ({ name: i.name, cat: i.cat, qty: i.qty, price: parseFloat(i.price)||0 })) };
     const h = [rec, ...history].slice(0, 20);
     setHistory(h);
     try { localStorage.setItem(HISTORY_KEY, JSON.stringify(h)); } catch {}
-    setItems(initItems()); setSaved(true); setTimeout(() => setSaved(false), 2500);
+    setItems([]); setBudget(""); setSaved(true); setTimeout(() => setSaved(false), 2500);
   }
 
-  const s = { fontFamily: "sans-serif", maxWidth: 480, margin: "0 auto", background: "#f7f8fa", minHeight: "100vh" };
+  const grouped = CATEGORIES.map(cat => ({ cat, items: items.filter(i => i.cat === cat) })).filter(g => g.items.length > 0);
 
   return (
-    <div style={s}>
-      <div style={{ background: "#d42b2b", padding: "18px 20px 14px", color: "#fff" }}>
-        <div style={{ fontSize: 11, letterSpacing: 2, opacity: 0.8 }}>COSTCO 採購紀錄</div>
-        <div style={{ fontSize: 22, fontWeight: 700 }}>好市多購物清單</div>
+    <div style={{fontFamily:"sans-serif",maxWidth:480,margin:"0 auto",background:"#f7f8fa",minHeight:"100vh"}}>
+      <div style={{background:"#d42b2b",padding:"18px 20px 14px",color:"#fff"}}>
+        <div style={{fontSize:11,letterSpacing:2,opacity:0.8}}>COSTCO 採購紀錄</div>
+        <div style={{fontSize:22,fontWeight:700}}>好市多購物清單</div>
       </div>
-      <div style={{ display: "flex", background: "#fff", borderBottom: "2px solid #eee" }}>
+      <div style={{display:"flex",background:"#fff",borderBottom:"2px solid #eee"}}>
         {["shopping","history"].map(t => (
-          <button key={t} onClick={() => setTab(t)} style={{ flex:1, padding:"12px 0", border:"none", background:"none", cursor:"pointer", fontWeight: tab===t?700:400, color: tab===t?"#d42b2b":"#888", borderBottom: tab===t?"2px solid #d42b2b":"2px solid transparent", fontSize:14, marginBottom:-2 }}>
-            {t === "shopping" ? "📋 本次採買" : "📂 歷史紀錄"}
+          <button key={t} onClick={() => setTab(t)} style={{flex:1,padding:"12px 0",border:"none",background:"none",cursor:"pointer",fontWeight:tab===t?700:400,color:tab===t?"#d42b2b":"#888",borderBottom:tab===t?"2px solid #d42b2b":"2px solid transparent",fontSize:14,marginBottom:-2}}>
+            {t==="shopping"?"📋 本次採買":"📂 歷史紀錄"}
           </button>
         ))}
       </div>
 
-      {tab === "shopping" && (
-        <div style={{ padding: "16px 16px 100px" }}>
-          <div style={{ background:"#fff", borderRadius:12, padding:16, marginBottom:14, boxShadow:"0 1px 4px rgba(0,0,0,0.07)" }}>
-            <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:10 }}>
-              <span style={{ fontSize:13, color:"#555", whiteSpace:"nowrap" }}>預算上限</span>
-              <div style={{ display:"flex", alignItems:"center", flex:1, background:"#f7f8fa", borderRadius:8, padding:"6px 10px" }}>
-                <span style={{ color:"#888", fontSize:13, marginRight:4 }}>NT$</span>
-                <input type="number" placeholder="輸入預算" value={budget} onChange={e => setBudget(e.target.value)} style={{ border:"none", background:"none", fontSize:14, width:"100%", outline:"none" }} />
+      {tab==="shopping" && (
+        <div style={{padding:"16px 16px 120px"}}>
+          <div style={{background:"#fff",borderRadius:12,padding:16,marginBottom:14,boxShadow:"0 1px 4px rgba(0,0,0,0.07)"}}>
+            <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:budgetNum>0?10:0}}>
+              <span style={{fontSize:13,color:"#555",whiteSpace:"nowrap"}}>預算上限</span>
+              <div style={{display:"flex",alignItems:"center",flex:1,background:"#f7f8fa",borderRadius:8,padding:"6px 10px"}}>
+                <span style={{color:"#888",fontSize:13,marginRight:4}}>NT$</span>
+                <input type="number" placeholder="輸入預算（選填）" value={budget} onChange={e => setBudget(e.target.value)} style={{border:"none",background:"none",fontSize:14,width:"100%",outline:"none"}} />
               </div>
             </div>
-            {budgetNum > 0 && <div style={{ marginBottom:10 }}><div style={{ height:6, background:"#eee", borderRadius:99 }}><div style={{ height:6, borderRadius:99, background: over?"#e53935":pct>80?"#fb8c00":"#43a047", width:`${pct}%`, transition:"width 0.3s" }} /></div></div>}
-            <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center" }}>
-              <span style={{ fontSize:13, color:"#888" }}>目前花費</span>
-              <span style={{ fontSize:24, fontWeight:800, color: over?"#e53935":"#222" }}>NT$ {total.toLocaleString()}{over && <span style={{ fontSize:12, marginLeft:6, color:"#e53935" }}>超出預算！</span>}</span>
+            {budgetNum>0 && <div style={{marginBottom:10}}><div style={{height:6,background:"#eee",borderRadius:99}}><div style={{height:6,borderRadius:99,background:over?"#e53935":pct>80?"#fb8c00":"#43a047",width:`${pct}%`,transition:"width 0.3s"}} /></div></div>}
+            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+              <span style={{fontSize:13,color:"#888"}}>目前花費</span>
+              <div style={{textAlign:"right"}}>
+                <span style={{fontSize:26,fontWeight:800,color:over?"#e53935":"#222"}}>NT$ {total.toLocaleString()}</span>
+                {over && <div style={{fontSize:12,color:"#e53935"}}>超出預算 NT$ {(total-budgetNum).toLocaleString()}！</div>}
+                {budgetNum>0 && !over && <div style={{fontSize:12,color:"#888"}}>還剩 NT$ {(budgetNum-total).toLocaleString()}</div>}
+              </div>
             </div>
-            {budgetNum > 0 && !over && <div style={{ textAlign:"right", fontSize:12, color:"#888", marginTop:2 }}>還剩 NT$ {(budgetNum-total).toLocaleString()}</div>}
           </div>
 
-          {CATEGORIES.map(cat => {
-            const catItems = Object.entries(items).filter(([,v]) => v.category === cat.id);
-            if (!catItems.length) return null;
-            return (
-              <div key={cat.id} style={{ background:"#fff", borderRadius:12, marginBottom:10, overflow:"hidden", boxShadow:"0 1px 4px rgba(0,0,0,0.06)" }}>
-                <div style={{ padding:"10px 14px", background:"#fafafa", borderBottom:"1px solid #f0f0f0", fontSize:13, fontWeight:700, color:"#444" }}>{cat.label}</div>
-                {catItems.map(([k, item]) => (
-                  <div key={k} style={{ padding:"10px 14px", borderBottom:"1px solid #f5f5f5", display:"flex", gap:10, alignItems:"center" }}>
-                    <input type="checkbox" checked={item.checked} onChange={() => toggle(k)} style={{ width:18, height:18, accentColor:"#d42b2b", cursor:"pointer", flexShrink:0 }} />
-                    <span style={{ flex:1, fontSize:14, color: item.checked?"#222":"#aaa", textDecoration: item.checked?"none":"line-through" }}>{item.name}</span>
-                    {item.checked && (
-                      <div style={{ display:"flex", alignItems:"center", background:"#f7f8fa", borderRadius:8, padding:"4px 8px", gap:2 }}>
-                        <span style={{ fontSize:12, color:"#888" }}>NT$</span>
-                        <input type="number" placeholder="金額" value={item.price} onChange={e => setPrice(k, e.target.value)} style={{ border:"none", background:"none", width:70, fontSize:13, outline:"none" }} />
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            );
-          })}
+          {items.length>0 && <div style={{fontSize:12,color:"#888",marginBottom:8,paddingLeft:4}}>共 {items.length} 項商品</div>}
 
-          <div style={{ background:"#fff", borderRadius:12, padding:14, marginBottom:14, boxShadow:"0 1px 4px rgba(0,0,0,0.06)" }}>
-            {!showAdd ? (
-              <button onClick={() => setShowAdd(true)} style={{ width:"100%", padding:10, border:"2px dashed #ddd", borderRadius:8, background:"none", color:"#888", fontSize:14, cursor:"pointer" }}>＋ 新增品項</button>
-            ) : (
-              <div style={{ display:"flex", flexDirection:"column", gap:8 }}>
-                <select value={newCat} onChange={e => setNewCat(e.target.value)} style={{ padding:"8px 10px", borderRadius:8, border:"1px solid #ddd", fontSize:13 }}>
-                  {CATEGORIES.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}
-                </select>
-                <input placeholder="品項名稱" value={newName} onChange={e => setNewName(e.target.value)} onKeyDown={e => e.key==="Enter" && addItem()} style={{ padding:"8px 10px", borderRadius:8, border:"1px solid #ddd", fontSize:14 }} />
-                <div style={{ display:"flex", gap:8 }}>
-                  <button onClick={addItem} style={{ flex:1, padding:8, background:"#d42b2b", color:"#fff", border:"none", borderRadius:8, fontSize:14, cursor:"pointer" }}>新增</button>
-                  <button onClick={() => setShowAdd(false)} style={{ flex:1, padding:8, background:"#eee", color:"#555", border:"none", borderRadius:8, fontSize:14, cursor:"pointer" }}>取消</button>
+          {grouped.map(({cat, items:catItems}) => (
+            <div key={cat} style={{background:"#fff",borderRadius:12,marginBottom:10,overflow:"hidden",boxShadow:"0 1px 4px rgba(0,0,0,0.06)"}}>
+              <div style={{padding:"10px 14px",background:"#fafafa",borderBottom:"1px solid #f0f0f0",fontSize:13,fontWeight:700,color:"#444"}}>{CAT_EMOJI[cat]} {cat}</div>
+              {catItems.map(item => (
+                <div key={item.id} style={{padding:"11px 14px",borderBottom:"1px solid #f5f5f5",display:"flex",alignItems:"center",gap:8}}>
+                  <div style={{flex:1}}>
+                    <div style={{fontSize:14,fontWeight:600,color:"#222"}}>{item.name}</div>
+                    <div style={{fontSize:12,color:"#888",marginTop:2}}>數量 {item.qty} × NT$ {parseFloat(item.price||0).toLocaleString()}</div>
+                  </div>
+                  <div style={{fontSize:15,fontWeight:700,color:"#d42b2b",minWidth:60,textAlign:"right"}}>NT$ {((parseFloat(item.price)||0)*(parseInt(item.qty)||1)).toLocaleString()}</div>
+                  <button onClick={() => startEdit(item)} style={{background:"none",border:"none",fontSize:16,cursor:"pointer",color:"#aaa",padding:"0 2px"}}>✏️</button>
+                  <button onClick={() => deleteItem(item.id)} style={{background:"none",border:"none",fontSize:16,cursor:"pointer",color:"#aaa",padding:"0 2px"}}>🗑️</button>
+                </div>
+              ))}
+            </div>
+          ))}
+
+          {items.length===0 && !showForm && (
+            <div style={{textAlign:"center",padding:"40px 20px",color:"#bbb"}}>
+              <div style={{fontSize:40,marginBottom:10}}>🛒</div>
+              <div style={{fontSize:14}}>清單是空的<br/>點下方「新增品項」開始記錄</div>
+            </div>
+          )}
+
+          {showForm && (
+            <div style={{background:"#fff",borderRadius:12,padding:16,marginBottom:12,boxShadow:"0 2px 8px rgba(0,0,0,0.1)"}}>
+              <div style={{fontSize:14,fontWeight:700,marginBottom:12,color:"#333"}}>{editId!==null?"✏️ 編輯品項":"➕ 新增品項"}</div>
+              <div style={{marginBottom:10}}>
+                <div style={{fontSize:12,color:"#888",marginBottom:4}}>類型</div>
+                <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
+                  {CATEGORIES.map(c => (
+                    <button key={c} onClick={() => setForm(f => ({...f,cat:c}))} style={{padding:"5px 10px",borderRadius:20,border:"1.5px solid",borderColor:form.cat===c?"#d42b2b":"#ddd",background:form.cat===c?"#fff0f0":"#fff",color:form.cat===c?"#d42b2b":"#555",fontSize:12,cursor:"pointer",fontWeight:form.cat===c?700:400}}>
+                      {CAT_EMOJI[c]} {c}
+                    </button>
+                  ))}
                 </div>
               </div>
-            )}
-          </div>
+              <div style={{marginBottom:10}}>
+                <div style={{fontSize:12,color:"#888",marginBottom:4}}>品名</div>
+                <input placeholder="輸入品名" value={form.name} onChange={e => setForm(f => ({...f,name:e.target.value}))} style={{width:"100%",padding:"9px 12px",borderRadius:8,border:"1.5px solid #ddd",fontSize:14,boxSizing:"border-box",outline:"none"}} />
+              </div>
+              <div style={{display:"flex",gap:10,marginBottom:14}}>
+                <div style={{flex:1}}>
+                  <div style={{fontSize:12,color:"#888",marginBottom:4}}>數量</div>
+                  <input type="number" min="1" value={form.qty} onChange={e => setForm(f => ({...f,qty:e.target.value}))} style={{width:"100%",padding:"9px 12px",borderRadius:8,border:"1.5px solid #ddd",fontSize:14,boxSizing:"border-box",outline:"none"}} />
+                </div>
+                <div style={{flex:2}}>
+                  <div style={{fontSize:12,color:"#888",marginBottom:4}}>單價 (NT$)</div>
+                  <input type="number" placeholder="0" value={form.price} onChange={e => setForm(f => ({...f,price:e.target.value}))} style={{width:"100%",padding:"9px 12px",borderRadius:8,border:"1.5px solid #ddd",fontSize:14,boxSizing:"border-box",outline:"none"}} />
+                </div>
+              </div>
+              {form.price && <div style={{textAlign:"right",fontSize:13,color:"#d42b2b",fontWeight:600,marginBottom:12}}>小計 NT$ {((parseFloat(form.price)||0)*(parseInt(form.qty)||1)).toLocaleString()}</div>}
+              <div style={{display:"flex",gap:8}}>
+                <button onClick={addItem} style={{flex:2,padding:11,background:"#d42b2b",color:"#fff",border:"none",borderRadius:8,fontSize:15,fontWeight:700,cursor:"pointer"}}>{editId!==null?"儲存":"新增"}</button>
+                <button onClick={() => {setShowForm(false);setEditId(null);setForm({cat:"水果",name:"",qty:"1",price:""}); }} style={{flex:1,padding:11,background:"#eee",color:"#555",border:"none",borderRadius:8,fontSize:15,cursor:"pointer"}}>取消</button>
+              </div>
+            </div>
+          )}
 
-          <button onClick={finish} style={{ width:"100%", padding:16, background:"#d42b2b", color:"#fff", border:"none", borderRadius:12, fontSize:16, fontWeight:700, cursor:"pointer", boxShadow:"0 2px 8px rgba(212,43,43,0.3)" }}>✅ 結束採買，儲存紀錄</button>
-          {saved && <div style={{ textAlign:"center", marginTop:10, color:"#43a047", fontWeight:600, fontSize:14 }}>✓ 已儲存！清單已重置</div>}
+          {!showForm && (
+            <button onClick={() => setShowForm(true)} style={{width:"100%",padding:14,border:"2px dashed #d42b2b",borderRadius:12,background:"#fff0f0",color:"#d42b2b",fontSize:15,fontWeight:700,cursor:"pointer",marginBottom:12}}>
+              ＋ 新增品項
+            </button>
+          )}
+
+          {items.length>0 && (
+            <button onClick={finish} style={{width:"100%",padding:16,background:"#d42b2b",color:"#fff",border:"none",borderRadius:12,fontSize:16,fontWeight:700,cursor:"pointer",boxShadow:"0 2px 8px rgba(212,43,43,0.3)"}}>
+              ✅ 結束採買，儲存紀錄
+            </button>
+          )}
+
+          {saved && <div style={{textAlign:"center",marginTop:10,color:"#43a047",fontWeight:600,fontSize:14}}>✓ 已儲存！清單已重置</div>}
         </div>
       )}
 
-      {tab === "history" && (
-        <div style={{ padding:"16px 16px 40px" }}>
+      {tab==="history" && (
+        <div style={{padding:"16px 16px 40px"}}>
           {!history.length ? (
-            <div style={{ textAlign:"center", color:"#aaa", padding:40, fontSize:14 }}>還沒有採買紀錄<br/>完成第一次採買後會顯示在這裡</div>
-          ) : history.map((r, i) => (
-            <div key={i} style={{ background:"#fff", borderRadius:12, marginBottom:12, overflow:"hidden", boxShadow:"0 1px 4px rgba(0,0,0,0.07)" }}>
-              <div style={{ padding:"12px 14px", display:"flex", justifyContent:"space-between", alignItems:"center", borderBottom:"1px solid #f0f0f0" }}>
+            <div style={{textAlign:"center",color:"#aaa",padding:40,fontSize:14}}>還沒有採買紀錄<br/>完成第一次採買後會顯示在這裡</div>
+          ) : history.map((r,i) => (
+            <div key={i} style={{background:"#fff",borderRadius:12,marginBottom:12,overflow:"hidden",boxShadow:"0 1px 4px rgba(0,0,0,0.07)"}}>
+              <div style={{padding:"12px 14px",display:"flex",justifyContent:"space-between",alignItems:"center",borderBottom:"1px solid #f0f0f0"}}>
                 <div>
-                  <div style={{ fontWeight:700, fontSize:15 }}>{r.date}</div>
-                  {r.budget > 0 && <div style={{ fontSize:11, color: r.total>r.budget?"#e53935":"#43a047", marginTop:2 }}>預算 NT$ {r.budget.toLocaleString()} · {r.total>r.budget?"超出":"未超出"}</div>}
+                  <div style={{fontWeight:700,fontSize:15}}>{r.date}</div>
+                  <div style={{fontSize:12,color:"#aaa",marginTop:2}}>{r.items.length} 項商品</div>
+                  {r.budget>0 && <div style={{fontSize:11,color:r.total>r.budget?"#e53935":"#43a047",marginTop:2}}>預算 NT$ {r.budget.toLocaleString()} · {r.total>r.budget?"超出":"未超出"}</div>}
                 </div>
-                <span style={{ fontSize:18, fontWeight:800, color:"#d42b2b" }}>NT$ {r.total.toLocaleString()}</span>
+                <span style={{fontSize:18,fontWeight:800,color:"#d42b2b"}}>NT$ {r.total.toLocaleString()}</span>
               </div>
-              <div style={{ padding:"10px 14px" }}>
-                {r.items.map((item, j) => (
-                  <div key={j} style={{ display:"flex", justifyContent:"space-between", fontSize:13, padding:"3px 0", color:"#555" }}>
-                    <span>{item.name}</span><span>NT$ {item.price.toLocaleString()}</span>
+              <div style={{padding:"10px 14px"}}>
+                {r.items.map((item,j) => (
+                  <div key={j} style={{display:"flex",justifyContent:"space-between",fontSize:13,padding:"3px 0",color:"#555"}}>
+                    <span>{CAT_EMOJI[item.cat]} {item.name} × {item.qty}</span>
+                    <span>NT$ {(item.price*(parseInt(item.qty)||1)).toLocaleString()}</span>
                   </div>
                 ))}
               </div>
