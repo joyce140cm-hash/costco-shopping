@@ -5,68 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>好市多採購清單</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,sans-serif;background:#f7f8fa;min-height:100vh}
-.app{max-width:480px;margin:0 auto}
-.header{background:#d42b2b;padding:18px 20px 14px;color:#fff}
-.header-sub{font-size:11px;letter-spacing:2px;opacity:.8;margin-bottom:4px}
-.header-title{font-size:22px;font-weight:700}
-.tabs{display:flex;background:#fff;border-bottom:2px solid #eee}
-.tab{flex:1;padding:12px 0;border:none;background:none;font-size:14px;color:#888;border-bottom:2px solid transparent;margin-bottom:-2px;-webkit-tap-highlight-color:transparent}
-.tab.active{font-weight:700;color:#d42b2b;border-bottom-color:#d42b2b}
-.content{padding:16px 16px 120px}
-.card{background:#fff;border-radius:12px;padding:16px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
-.budget-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.budget-label{font-size:13px;color:#555;white-space:nowrap}
-.budget-input-wrap{display:flex;align-items:center;flex:1;background:#f7f8fa;border-radius:8px;padding:6px 10px}
-.budget-prefix{color:#888;font-size:13px;margin-right:4px}
-.budget-input{border:none;background:none;font-size:14px;width:100%;outline:none}
-.progress-bar{height:6px;background:#eee;border-radius:99px;margin-bottom:10px}
-.progress-fill{height:6px;border-radius:99px;transition:width .3s;background:#43a047}
-.total-row{display:flex;justify-content:space-between;align-items:center}
-.total-label{font-size:13px;color:#888}
-.total-amount{font-size:26px;font-weight:800;color:#222}
-.total-amount.over{color:#e53935}
-.total-sub{font-size:12px;color:#888;text-align:right;margin-top:2px}
-.total-sub.over{color:#e53935}
-.item-count{font-size:12px;color:#888;margin-bottom:8px;padding-left:4px}
-.cat-block{background:#fff;border-radius:12px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06)}
-.cat-header{padding:10px 14px;background:#fafafa;border-bottom:1px solid #f0f0f0;font-size:13px;font-weight:700;color:#444}
-.item-row{padding:11px 14px;border-bottom:1px solid #f5f5f5;display:flex;align-items:center;gap:8px}
-.item-info{flex:1}
-.item-name{font-size:14px;font-weight:600;color:#222}
-.item-meta{font-size:12px;color:#888;margin-top:2px}
-.item-price{font-size:15px;font-weight:700;color:#d42b2b;min-width:70px;text-align:right}
-.icon-btn{background:none;border:none;font-size:18px;padding:4px 6px;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
-.empty{text-align:center;padding:40px 20px;color:#bbb}
-.empty-icon{font-size:40px;margin-bottom:10px}
-.empty-text{font-size:14px}
-.form-card{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-.form-title{font-size:14px;font-weight:700;margin-bottom:12px;color:#333}
-.form-label{font-size:12px;color:#888;margin-bottom:4px}
-.cat-pills{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
-.cat-pill{padding:6px 12px;border-radius:20px;border:1.5px solid #ddd;background:#fff;color:#555;font-size:12px;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
-.cat-pill.selected{border-color:#d42b2b;background:#fff0f0;color:#d42b2b;font-weight:700}
-.text-input{width:100%;padding:9px 12px;border-radius:8px;border:1.5px solid #ddd;font-size:16px;outline:none;margin-bottom:10px}
-.row2{display:flex;gap:10px;margin-bottom:14px}
-.row2>div{flex:1}
-.row2>div:last-child{flex:2}
-.subtotal{text-align:right;font-size:13px;color:#d42b2b;font-weight:600;margin-bottom:12px}
-.btn-row{display:flex;gap:8px}
-.btn-primary{flex:2;padding:13px;background:#d42b2b;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:700;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.btn-secondary{flex:1;padding:13px;background:#eee;color:#555;border:none;border-radius:8px;font-size:15px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.add-btn{width:100%;padding:16px;border:2px dashed #d42b2b;border-radius:12px;background:#fff0f0;color:#d42b2b;font-size:15px;font-weight:700;margin-bottom:12px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.finish-btn{width:100%;padding:16px;background:#d42b2b;color:#fff;border:none;border-radius:12px;font-size:16px;font-weight:700;box-shadow:0 2px 8px rgba(212,43,43,.3);touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.saved-msg{text-align:center;margin-top:10px;color:#43a047;font-weight:600;font-size:14px}
-.history-card{background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.07)}
-.history-header{padding:12px 14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f0f0f0}
-.history-date{font-weight:700;font-size:15px}
-.history-meta{font-size:12px;color:#aaa;margin-top:2px}
-.history-total{font-size:18px;font-weight:800;color:#d42b2b}
-.history-items{padding:10px 14px}
-.history-item{display:flex;justify-content:space-between;font-size:13px;padding:3px 0;color:#555}
-.no-history{text-align:center;color:#aaa;padding:40px;font-size:14px}
-.hidden{display:none}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, sans-serif; background: #f7f8fa; min-height: 100vh; }
+.app { max-width: 480px; margin: 0 auto; }
+.header { background: #d42b2b; padding: 18px 20px 14px; color: #fff; }
+.header-sub { font-size: 11px; letter-spacing: 2px; opacity: 0.8; margin-bottom: 4px; }
+.header-title { font-size: 22px; font-weight: 700; }
+.tabs { display: flex; background: #fff; border-bottom: 2px solid #eee; }
+.tab { flex: 1; padding: 12px 0; border: none; background: none; cursor: pointer; font-size: 14px; color: #888; border-bottom: 2px solid transparent; margin-bottom: -2px; }
+.tab.active { font-weight: 700; color: #d42b2b; border-bottom-color: #d42b2b; }
+.content { padding: 16px 16px 120px; }
+.card { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+.budget-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.budget-label { font-size: 13px; color: #555; white-space: nowrap; }
+.budget-input-wrap { display: flex; align-items: center; flex: 1; background: #f7f8fa; border-radius: 8px; padding: 6px 10px; }
+.budget-prefix { color: #888; font-size: 13px; margin-right: 4px; }
+.budget-input { border: none; background: none; font-size: 14px; width: 100%; outline: none; }
+.progress-bar { height: 6px; background: #eee; border-radius: 99px; margin-bottom: 10px; }
+.progress-fill { height: 6px; border-radius: 99px; transition: width 0.3s; background: #43a047; }
+.total-row { display: flex; justify-content: space-between; align-items: center; }
+.total-label { font-size: 13px; color: #888; }
+.total-amount { font-size: 26px; font-weight: 800; color: #222; }
+.total-amount.over { color: #e53935; }
+.total-sub { font-size: 12px; color: #888; text-align: right; margin-top: 2px; }
+.total-sub.over { color: #e53935; }
+.item-count { font-size: 12px; color: #888; margin-bottom: 8px; padding-left: 4px; }
+.cat-block { background: #fff; border-radius: 12px; margin-bottom: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.cat-header { padding: 10px 14px; background: #fafafa; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: 700; color: #444; }
+.item-row { padding: 11px 14px; border-bottom: 1px solid #f5f5f5; display: flex; align-items: center; gap: 8px; }
+.item-info { flex: 1; }
+.item-name { font-size: 14px; font-weight: 600; color: #222; }
+.item-meta { font-size: 12px; color: #888; margin-top: 2px; }
+.item-price { font-size: 15px; font-weight: 700; color: #d42b2b; min-width: 70px; text-align: right; }
+.icon-btn { background: none; border: none; font-size: 16px; cursor: pointer; color: #aaa; padding: 0 2px; }
+.empty { text-align: center; padding: 40px 20px; color: #bbb; }
+.empty-icon { font-size: 40px; margin-bottom: 10px; }
+.empty-text { font-size: 14px; }
+.form-card { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.form-title { font-size: 14px; font-weight: 700; margin-bottom: 12px; color: #333; }
+.form-label { font-size: 12px; color: #888; margin-bottom: 4px; }
+.cat-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.cat-pill { padding: 5px 10px; border-radius: 20px; border: 1.5px solid #ddd; background: #fff; color: #555; font-size: 12px; cursor: pointer; }
+.cat-pill.selected { border-color: #d42b2b; background: #fff0f0; color: #d42b2b; font-weight: 700; }
+.text-input { width: 100%; padding: 9px 12px; border-radius: 8px; border: 1.5px solid #ddd; font-size: 14px; outline: none; margin-bottom: 10px; }
+.row2 { display: flex; gap: 10px; margin-bottom: 14px; }
+.row2 > div { flex: 1; }
+.row2 > div:last-child { flex: 2; }
+.subtotal { text-align: right; font-size: 13px; color: #d42b2b; font-weight: 600; margin-bottom: 12px; }
+.btn-row { display: flex; gap: 8px; }
+.btn-primary { flex: 2; padding: 11px; background: #d42b2b; color: #fff; border: none; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; }
+.btn-secondary { flex: 1; padding: 11px; background: #eee; color: #555; border: none; border-radius: 8px; font-size: 15px; cursor: pointer; }
+.add-btn { width: 100%; padding: 14px; border: 2px dashed #d42b2b; border-radius: 12px; background: #fff0f0; color: #d42b2b; font-size: 15px; font-weight: 700; cursor: pointer; margin-bottom: 12px; }
+.finish-btn { width: 100%; padding: 16px; background: #d42b2b; color: #fff; border: none; border-radius: 12px; font-size: 16px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 8px rgba(212,43,43,0.3); }
+.saved-msg { text-align: center; margin-top: 10px; color: #43a047; font-weight: 600; font-size: 14px; }
+.history-card { background: #fff; border-radius: 12px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+.history-header { padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f0f0f0; }
+.history-date { font-weight: 700; font-size: 15px; }
+.history-meta { font-size: 12px; color: #aaa; margin-top: 2px; }
+.history-total { font-size: 18px; font-weight: 800; color: #d42b2b; }
+.history-items { padding: 10px 14px; }
+.history-item { display: flex; justify-content: space-between; font-size: 13px; padding: 3px 0; color: #555; }
+.no-history { text-align: center; color: #aaa; padding: 40px; font-size: 14px; }
+.hidden { display: none; }
 </style>
 </head>
 <body>
@@ -76,16 +76,18 @@ body{font-family:-apple-system,sans-serif;background:#f7f8fa;min-height:100vh}
     <div class="header-title">好市多購物清單</div>
   </div>
   <div class="tabs">
-    <button class="tab active" id="tab-btn-shopping">📋 本次採買</button>
-    <button class="tab" id="tab-btn-history">📂 歷史紀錄</button>
+    <button class="tab active" onclick="switchTab('shopping')">📋 本次採買</button>
+    <button class="tab" onclick="switchTab('history')">📂 歷史紀錄</button>
   </div>
+
+  <!-- Shopping Tab -->
   <div id="tab-shopping" class="content">
     <div class="card">
       <div class="budget-row">
         <span class="budget-label">預算上限</span>
         <div class="budget-input-wrap">
           <span class="budget-prefix">NT$</span>
-          <input class="budget-input" type="number" placeholder="輸入預算（選填）" id="budget-input">
+          <input class="budget-input" type="number" placeholder="輸入預算（選填）" id="budget-input" oninput="updateTotal()">
         </div>
       </div>
       <div class="progress-bar hidden" id="progress-bar">
@@ -99,12 +101,16 @@ body{font-family:-apple-system,sans-serif;background:#f7f8fa;min-height:100vh}
         </div>
       </div>
     </div>
+
     <div id="item-count" class="item-count hidden"></div>
     <div id="items-list"></div>
+
     <div id="empty-state" class="empty">
       <div class="empty-icon">🛒</div>
       <div class="empty-text">清單是空的<br>點下方「新增品項」開始記錄</div>
     </div>
+
+    <!-- Add Form -->
     <div id="add-form" class="form-card hidden">
       <div class="form-title" id="form-title">➕ 新增品項</div>
       <div class="form-label">類型</div>
@@ -114,215 +120,252 @@ body{font-family:-apple-system,sans-serif;background:#f7f8fa;min-height:100vh}
       <div class="row2">
         <div>
           <div class="form-label">數量</div>
-          <input class="text-input" type="number" id="item-qty" value="1" min="1" style="margin-bottom:0">
+          <input class="text-input" type="number" id="item-qty" value="1" min="1" oninput="updateSubtotal()" style="margin-bottom:0">
         </div>
         <div>
           <div class="form-label">單價 (NT$)</div>
-          <input class="text-input" type="number" id="item-price" placeholder="0" style="margin-bottom:0">
+          <input class="text-input" type="number" id="item-price" placeholder="0" oninput="updateSubtotal()" style="margin-bottom:0">
         </div>
       </div>
       <div class="subtotal hidden" id="subtotal-preview"></div>
-      <div class="btn-row" style="margin-top:14px">
-        <button class="btn-primary" id="save-btn">新增</button>
-        <button class="btn-secondary" id="cancel-btn">取消</button>
+      <div class="btn-row">
+        <button class="btn-primary" onclick="saveItem()">新增</button>
+        <button class="btn-secondary" onclick="closeForm()">取消</button>
       </div>
     </div>
-    <button class="add-btn" id="add-btn">＋ 新增品項</button>
-    <button class="finish-btn hidden" id="finish-btn">✅ 結束採買，儲存紀錄</button>
+
+    <button class="add-btn" id="add-btn" onclick="openForm()">＋ 新增品項</button>
+    <button class="finish-btn hidden" id="finish-btn" onclick="finishShopping()">✅ 結束採買，儲存紀錄</button>
     <div class="saved-msg hidden" id="saved-msg">✓ 已儲存！清單已重置</div>
   </div>
+
+  <!-- History Tab -->
   <div id="tab-history" class="content hidden">
     <div id="history-list"></div>
   </div>
 </div>
-<script>
-var CATS=["水果","常溫食品","冷凍食品","冷藏食品","零食","用品","衣物","玩具","電器","其他"];
-var EMOJI={"水果":"🍎","常溫食品":"🥫","冷凍食品":"🧊","冷藏食品":"🥛","零食":"🍿","用品":"🧴","衣物":"👕","玩具":"🧸","電器":"🔌","其他":"📦"};
-var HISTORY_KEY="costco_v3_history";
-var items=[];
-var editId=null;
-var selectedCat="水果";
-var historyData=[];
-try{historyData=JSON.parse(localStorage.getItem(HISTORY_KEY))||[];}catch(e){}
 
-var pillsEl=document.getElementById('cat-pills');
-CATS.forEach(function(c){
-  var btn=document.createElement('button');
-  btn.className='cat-pill'+(c===selectedCat?' selected':'');
-  btn.textContent=EMOJI[c]+' '+c;
-  btn.setAttribute('data-cat',c);
-  btn.setAttribute('type','button');
+<script>
+const CATS = ["水果","常溫食品","冷凍食品","冷藏食品","零食","用品","衣物","玩具","電器","其他"];
+const EMOJI = {"水果":"🍎","常溫食品":"🥫","冷凍食品":"🧊","冷藏食品":"🥛","零食":"🍿","用品":"🧴","衣物":"👕","玩具":"🧸","電器":"🔌","其他":"📦"};
+const HISTORY_KEY = "costco_v3_history";
+
+let items = [];
+let editId = null;
+let selectedCat = "水果";
+let history = [];
+
+try { history = JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; } catch {}
+
+// Init category pills
+const pillsEl = document.getElementById('cat-pills');
+CATS.forEach(c => {
+  const btn = document.createElement('button');
+  btn.className = 'cat-pill' + (c === selectedCat ? ' selected' : '');
+  btn.textContent = EMOJI[c] + ' ' + c;
+  btn.onclick = () => selectCat(c);
+  btn.id = 'pill-' + c;
   pillsEl.appendChild(btn);
 });
-pillsEl.addEventListener('click',function(e){
-  var btn=e.target.closest('.cat-pill');
-  if(!btn)return;
-  selectedCat=btn.getAttribute('data-cat');
-  document.querySelectorAll('.cat-pill').forEach(function(b){
-    b.className='cat-pill'+(b.getAttribute('data-cat')===selectedCat?' selected':'');
+
+function selectCat(c) {
+  selectedCat = c;
+  CATS.forEach(x => {
+    const el = document.getElementById('pill-' + x);
+    el.className = 'cat-pill' + (x === c ? ' selected' : '');
   });
-});
-
-document.getElementById('tab-btn-shopping').addEventListener('click',function(){switchTab('shopping');});
-document.getElementById('tab-btn-history').addEventListener('click',function(){switchTab('history');});
-document.getElementById('add-btn').addEventListener('click',function(){openForm(null);});
-document.getElementById('save-btn').addEventListener('click',function(){saveItem();});
-document.getElementById('cancel-btn').addEventListener('click',function(){closeForm();});
-document.getElementById('finish-btn').addEventListener('click',function(){finishShopping();});
-document.getElementById('budget-input').addEventListener('input',function(){updateTotal();});
-document.getElementById('item-qty').addEventListener('input',function(){updateSubtotal();});
-document.getElementById('item-price').addEventListener('input',function(){updateSubtotal();});
-
-function switchTab(tab){
-  document.getElementById('tab-shopping').classList.toggle('hidden',tab!=='shopping');
-  document.getElementById('tab-history').classList.toggle('hidden',tab!=='history');
-  document.getElementById('tab-btn-shopping').className='tab'+(tab==='shopping'?' active':'');
-  document.getElementById('tab-btn-history').className='tab'+(tab==='history'?' active':'');
-  if(tab==='history')renderHistory();
 }
 
-function openForm(id){
-  editId=id;
-  document.getElementById('form-title').textContent=id?'✏️ 編輯品項':'➕ 新增品項';
-  document.getElementById('save-btn').textContent=id?'儲存':'新增';
-  if(id){
-    var item=items.filter(function(i){return i.id===id;})[0];
-    selectedCat=item.cat;
-    document.querySelectorAll('.cat-pill').forEach(function(b){
-      b.className='cat-pill'+(b.getAttribute('data-cat')===selectedCat?' selected':'');
-    });
-    document.getElementById('item-name').value=item.name;
-    document.getElementById('item-qty').value=item.qty;
-    document.getElementById('item-price').value=item.price;
+function switchTab(tab) {
+  document.getElementById('tab-shopping').classList.toggle('hidden', tab !== 'shopping');
+  document.getElementById('tab-history').classList.toggle('hidden', tab !== 'history');
+  document.querySelectorAll('.tab').forEach((t, i) => {
+    t.classList.toggle('active', (i === 0 && tab === 'shopping') || (i === 1 && tab === 'history'));
+  });
+  if (tab === 'history') renderHistory();
+}
+
+function openForm(id) {
+  editId = id || null;
+  document.getElementById('form-title').textContent = id ? '✏️ 編輯品項' : '➕ 新增品項';
+  document.querySelector('.btn-primary').textContent = id ? '儲存' : '新增';
+  if (id) {
+    const item = items.find(i => i.id === id);
+    selectCat(item.cat);
+    document.getElementById('item-name').value = item.name;
+    document.getElementById('item-qty').value = item.qty;
+    document.getElementById('item-price').value = item.price;
     updateSubtotal();
   } else {
-    document.getElementById('item-name').value='';
-    document.getElementById('item-qty').value='1';
-    document.getElementById('item-price').value='';
+    document.getElementById('item-name').value = '';
+    document.getElementById('item-qty').value = '1';
+    document.getElementById('item-price').value = '';
     document.getElementById('subtotal-preview').classList.add('hidden');
   }
   document.getElementById('add-form').classList.remove('hidden');
   document.getElementById('add-btn').classList.add('hidden');
 }
 
-function closeForm(){
+function closeForm() {
   document.getElementById('add-form').classList.add('hidden');
   document.getElementById('add-btn').classList.remove('hidden');
-  editId=null;
+  editId = null;
 }
 
-function updateSubtotal(){
-  var price=parseFloat(document.getElementById('item-price').value)||0;
-  var qty=parseInt(document.getElementById('item-qty').value)||1;
-  var sub=document.getElementById('subtotal-preview');
-  if(price>0){sub.textContent='小計 NT$ '+(price*qty).toLocaleString();sub.classList.remove('hidden');}
-  else{sub.classList.add('hidden');}
-}
-
-function saveItem(){
-  var name=document.getElementById('item-name').value.trim();
-  if(!name)return;
-  var qty=document.getElementById('item-qty').value||'1';
-  var price=document.getElementById('item-price').value||'0';
-  if(editId!==null){
-    items=items.map(function(i){return i.id===editId?{id:i.id,cat:selectedCat,name:name,qty:qty,price:price}:i;});
-    editId=null;
+function updateSubtotal() {
+  const price = parseFloat(document.getElementById('item-price').value) || 0;
+  const qty = parseInt(document.getElementById('item-qty').value) || 1;
+  const sub = document.getElementById('subtotal-preview');
+  if (price > 0) {
+    sub.textContent = '小計 NT$ ' + (price * qty).toLocaleString();
+    sub.classList.remove('hidden');
   } else {
-    items.push({id:Date.now(),cat:selectedCat,name:name,qty:qty,price:price});
+    sub.classList.add('hidden');
   }
-  closeForm();renderItems();updateTotal();
 }
 
-function deleteItem(id){
-  items=items.filter(function(i){return i.id!==id;});
-  renderItems();updateTotal();
+function saveItem() {
+  const name = document.getElementById('item-name').value.trim();
+  if (!name) return;
+  const qty = document.getElementById('item-qty').value || '1';
+  const price = document.getElementById('item-price').value || '0';
+  if (editId !== null) {
+    items = items.map(i => i.id === editId ? { ...i, cat: selectedCat, name, qty, price } : i);
+    editId = null;
+  } else {
+    items.push({ id: Date.now(), cat: selectedCat, name, qty, price });
+  }
+  closeForm();
+  renderItems();
+  updateTotal();
 }
 
-function renderItems(){
-  var list=document.getElementById('items-list');
-  var empty=document.getElementById('empty-state');
-  var countEl=document.getElementById('item-count');
-  var finishBtn=document.getElementById('finish-btn');
-  if(items.length===0){list.innerHTML='';empty.classList.remove('hidden');countEl.classList.add('hidden');finishBtn.classList.add('hidden');return;}
-  empty.classList.add('hidden');countEl.classList.remove('hidden');
-  countEl.textContent='共 '+items.length+' 項商品';
+function deleteItem(id) {
+  items = items.filter(i => i.id !== id);
+  renderItems();
+  updateTotal();
+}
+
+function renderItems() {
+  const list = document.getElementById('items-list');
+  const empty = document.getElementById('empty-state');
+  const countEl = document.getElementById('item-count');
+  const finishBtn = document.getElementById('finish-btn');
+
+  if (items.length === 0) {
+    list.innerHTML = '';
+    empty.classList.remove('hidden');
+    countEl.classList.add('hidden');
+    finishBtn.classList.add('hidden');
+    return;
+  }
+
+  empty.classList.add('hidden');
+  countEl.classList.remove('hidden');
+  countEl.textContent = '共 ' + items.length + ' 項商品';
   finishBtn.classList.remove('hidden');
-  var html='';
-  CATS.forEach(function(cat){
-    var catItems=items.filter(function(i){return i.cat===cat;});
-    if(!catItems.length)return;
-    html+='<div class="cat-block"><div class="cat-header">'+EMOJI[cat]+' '+cat+'</div>';
-    catItems.forEach(function(item){
-      var sub=(parseFloat(item.price)||0)*(parseInt(item.qty)||1);
-      html+='<div class="item-row"><div class="item-info"><div class="item-name">'+item.name+'</div><div class="item-meta">數量 '+item.qty+' × NT$ '+(parseFloat(item.price)||0).toLocaleString()+'</div></div><div class="item-price">NT$ '+sub.toLocaleString()+'</div><button class="icon-btn" data-edit="'+item.id+'">✏️</button><button class="icon-btn" data-del="'+item.id+'">🗑️</button></div>';
+
+  let html = '';
+  CATS.forEach(cat => {
+    const catItems = items.filter(i => i.cat === cat);
+    if (!catItems.length) return;
+    html += '<div class="cat-block"><div class="cat-header">' + EMOJI[cat] + ' ' + cat + '</div>';
+    catItems.forEach(item => {
+      const subtotal = (parseFloat(item.price) || 0) * (parseInt(item.qty) || 1);
+      html += '<div class="item-row">' +
+        '<div class="item-info">' +
+          '<div class="item-name">' + item.name + '</div>' +
+          '<div class="item-meta">數量 ' + item.qty + ' × NT$ ' + (parseFloat(item.price)||0).toLocaleString() + '</div>' +
+        '</div>' +
+        '<div class="item-price">NT$ ' + subtotal.toLocaleString() + '</div>' +
+        '<button class="icon-btn" onclick="openForm(' + item.id + ')">✏️</button>' +
+        '<button class="icon-btn" onclick="deleteItem(' + item.id + ')">🗑️</button>' +
+      '</div>';
     });
-    html+='</div>';
+    html += '</div>';
   });
-  list.innerHTML=html;
-  list.querySelectorAll('[data-edit]').forEach(function(btn){
-    btn.addEventListener('click',function(){openForm(parseInt(btn.getAttribute('data-edit')));});
-  });
-  list.querySelectorAll('[data-del]').forEach(function(btn){
-    btn.addEventListener('click',function(){deleteItem(parseInt(btn.getAttribute('data-del')));});
-  });
+  list.innerHTML = html;
 }
 
-function updateTotal(){
-  var total=items.reduce(function(s,i){return s+(parseFloat(i.price)||0)*(parseInt(i.qty)||1);},0);
-  var budget=parseFloat(document.getElementById('budget-input').value)||0;
-  var over=budget>0&&total>budget;
-  var pct=budget>0?Math.min((total/budget)*100,100):0;
-  var totalEl=document.getElementById('total-display');
-  totalEl.textContent='NT$ '+total.toLocaleString();
-  totalEl.className='total-amount'+(over?' over':'');
-  var sub=document.getElementById('budget-sub');
-  var bar=document.getElementById('progress-bar');
-  var fill=document.getElementById('progress-fill');
-  if(budget>0){
+function updateTotal() {
+  const total = items.reduce((s, i) => s + (parseFloat(i.price)||0) * (parseInt(i.qty)||1), 0);
+  const budget = parseFloat(document.getElementById('budget-input').value) || 0;
+  const over = budget > 0 && total > budget;
+  const pct = budget > 0 ? Math.min((total/budget)*100, 100) : 0;
+
+  const totalEl = document.getElementById('total-display');
+  totalEl.textContent = 'NT$ ' + total.toLocaleString();
+  totalEl.className = 'total-amount' + (over ? ' over' : '');
+
+  const sub = document.getElementById('budget-sub');
+  const bar = document.getElementById('progress-bar');
+  const fill = document.getElementById('progress-fill');
+
+  if (budget > 0) {
     bar.classList.remove('hidden');
-    fill.style.width=pct+'%';
-    fill.style.background=over?'#e53935':pct>80?'#fb8c00':'#43a047';
-    if(over){sub.textContent='超出預算 NT$ '+(total-budget).toLocaleString()+'！';sub.className='total-sub over';}
-    else{sub.textContent='還剩 NT$ '+(budget-total).toLocaleString();sub.className='total-sub';}
-  } else {bar.classList.add('hidden');sub.textContent='';}
+    fill.style.width = pct + '%';
+    fill.style.background = over ? '#e53935' : pct > 80 ? '#fb8c00' : '#43a047';
+    if (over) {
+      sub.textContent = '超出預算 NT$ ' + (total - budget).toLocaleString() + '！';
+      sub.className = 'total-sub over';
+    } else {
+      sub.textContent = '還剩 NT$ ' + (budget - total).toLocaleString();
+      sub.className = 'total-sub';
+    }
+  } else {
+    bar.classList.add('hidden');
+    sub.textContent = '';
+  }
 }
 
-function finishShopping(){
-  if(!items.length)return;
-  var total=items.reduce(function(s,i){return s+(parseFloat(i.price)||0)*(parseInt(i.qty)||1);},0);
-  var budget=parseFloat(document.getElementById('budget-input').value)||0;
-  var rec={date:new Date().toLocaleDateString('zh-TW'),total:total,budget:budget,items:items.map(function(i){return{name:i.name,cat:i.cat,qty:i.qty,price:parseFloat(i.price)||0};})};
-  historyData=[rec].concat(historyData).slice(0,20);
-  try{localStorage.setItem(HISTORY_KEY,JSON.stringify(historyData));}catch(e){}
-  items=[];
-  document.getElementById('budget-input').value='';
-  renderItems();updateTotal();
-  var msg=document.getElementById('saved-msg');
+function finishShopping() {
+  if (!items.length) return;
+  const total = items.reduce((s, i) => s + (parseFloat(i.price)||0) * (parseInt(i.qty)||1), 0);
+  const budget = parseFloat(document.getElementById('budget-input').value) || 0;
+  const rec = {
+    date: new Date().toLocaleDateString('zh-TW'),
+    total, budget,
+    items: items.map(i => ({ name: i.name, cat: i.cat, qty: i.qty, price: parseFloat(i.price)||0 }))
+  };
+  history = [rec, ...history].slice(0, 20);
+  try { localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); } catch {}
+  items = [];
+  document.getElementById('budget-input').value = '';
+  renderItems();
+  updateTotal();
+  const msg = document.getElementById('saved-msg');
   msg.classList.remove('hidden');
-  setTimeout(function(){msg.classList.add('hidden');},2500);
+  setTimeout(() => msg.classList.add('hidden'), 2500);
 }
 
-function renderHistory(){
-  var list=document.getElementById('history-list');
-  if(!historyData.length){list.innerHTML='<div class="no-history">還沒有採買紀錄<br>完成第一次採買後會顯示在這裡</div>';return;}
-  var html='';
-  historyData.forEach(function(r,idx){
-    var budgetInfo=r.budget>0?'<div style="font-size:11px;color:'+(r.total>r.budget?'#e53935':'#43a047')+';margin-top:2px">預算 NT$ '+r.budget.toLocaleString()+' · '+(r.total>r.budget?'超出':'未超出')+'</div>':'';
-    html+='<div class="history-card"><div class="history-header"><div><div class="history-date">'+r.date+'</div><div class="history-meta">'+r.items.length+' 項商品</div>'+budgetInfo+'</div><div style="display:flex;align-items:center;gap:8px"><span class="history-total">NT$ '+r.total.toLocaleString()+'</span><button class="icon-btn" data-hidx="'+idx+'">✕</button></div></div><div class="history-items">';
-    r.items.forEach(function(item){
-      html+='<div class="history-item"><span>'+EMOJI[item.cat]+' '+item.name+' × '+item.qty+'</span><span>NT$ '+(item.price*(parseInt(item.qty)||1)).toLocaleString()+'</span></div>';
+function renderHistory() {
+  const list = document.getElementById('history-list');
+  if (!history.length) {
+    list.innerHTML = '<div class="no-history">還沒有採買紀錄<br>完成第一次採買後會顯示在這裡</div>';
+    return;
+  }
+  let html = '';
+  history.forEach((r, idx) => {
+    const budgetInfo = r.budget > 0 ? '<div style="font-size:11px;color:' + (r.total > r.budget ? '#e53935' : '#43a047') + ';margin-top:2px">預算 NT$ ' + r.budget.toLocaleString() + ' · ' + (r.total > r.budget ? '超出' : '未超出') + '</div>' : '';
+    html += '<div class="history-card">' +
+      '<div class="history-header">' +
+        '<div><div class="history-date">' + r.date + '</div><div class="history-meta">' + r.items.length + ' 項商品</div>' + budgetInfo + '</div>' +
+        '<div style="display:flex;align-items:center;gap:8px"><span class="history-total">NT$ ' + r.total.toLocaleString() + '</span>' +
+        '<button class="icon-btn" onclick="deleteHistory(' + idx + ')">✕</button></div>' +
+      '</div>' +
+      '<div class="history-items">';
+    r.items.forEach(item => {
+      html += '<div class="history-item"><span>' + EMOJI[item.cat] + ' ' + item.name + ' × ' + item.qty + '</span><span>NT$ ' + (item.price * (parseInt(item.qty)||1)).toLocaleString() + '</span></div>';
     });
-    html+='</div></div>';
+    html += '</div></div>';
   });
-  list.innerHTML=html;
-  list.querySelectorAll('[data-hidx]').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      var idx=parseInt(btn.getAttribute('data-hidx'));
-      historyData=historyData.filter(function(_,i){return i!==idx;});
-      try{localStorage.setItem(HISTORY_KEY,JSON.stringify(historyData));}catch(e){}
-      renderHistory();
-    });
-  });
+  list.innerHTML = html;
+}
+
+function deleteHistory(idx) {
+  history = history.filter((_, i) => i !== idx);
+  try { localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); } catch {}
+  renderHistory();
 }
 
 renderItems();
