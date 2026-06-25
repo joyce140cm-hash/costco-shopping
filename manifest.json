@@ -1,0 +1,23 @@
+{
+  "name": "好市多採購清單",
+  "short_name": "好市多清單",
+  "description": "好市多採購清單、特價追蹤、消費紀錄",
+  "start_url": "/costco-shopping/",
+  "display": "standalone",
+  "background_color": "#d42b2b",
+  "theme_color": "#d42b2b",
+  "orientation": "portrait",
+  "lang": "zh-TW",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
