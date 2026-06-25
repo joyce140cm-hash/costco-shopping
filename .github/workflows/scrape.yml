@@ -1,0 +1,37 @@
+name: Scrape Costco Deals
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 台灣時間早上 10:00 (UTC+8，所以 UTC 是 02:00)
+  workflow_dispatch:  # 支援手動觸發
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install chromium --with-deps
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Commit and push deals.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add deals.json
+          git diff --quiet && git diff --staged --quiet || (
+            git commit -m "chore: update deals $(date '+%Y-%m-%d')"
+            git push
+          )
