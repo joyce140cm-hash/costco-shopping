@@ -89,6 +89,20 @@ canvas{display:block;max-width:100%}
 .trend-bar-bg{height:8px;background:#eee;border-radius:99px}
 .trend-bar-fill{height:8px;border-radius:99px;background:#d42b2b;transition:width .4s}
 .days-badge{display:inline-block;background:#fff3e0;color:#fb8c00;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;margin-top:4px}
+/* Deals styles */
+.deals-updated{font-size:12px;color:#aaa;margin-bottom:12px;text-align:center}
+.deals-section-title{font-size:13px;font-weight:700;color:#d42b2b;margin:16px 0 8px;padding-left:2px;letter-spacing:.04em}
+.deal-img{width:64px;height:64px;object-fit:cover;border-radius:8px;background:#f5f5f5;flex-shrink:0}
+.deal-img-placeholder{width:64px;height:64px;border-radius:8px;background:#fbe9e9;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+.deal-info{flex:1;min-width:0}
+.deal-name{font-size:13px;font-weight:600;color:#222;line-height:1.4;margin-bottom:4px}
+.deal-price{font-size:16px;font-weight:800;color:#d42b2b}
+.deal-badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:6px;vertical-align:middle}
+.badge-online{background:#e3f2fd;color:#1565c0}
+.badge-store{background:#e8f5e9;color:#2e7d32}
+.deal-add-btn{background:#d42b2b;color:#fff;border:none;border-radius:8px;padding:7px 12px;font-size:12px;font-weight:700;white-space:nowrap;touch-action:manipulation}
+.deals-empty{text-align:center;padding:40px 20px;color:#bbb;font-size:14px}
+.deals-loading{text-align:center;padding:40px 20px;color:#aaa;font-size:14px}
 </style>
 </head>
 <body>
@@ -99,6 +113,7 @@ canvas{display:block;max-width:100%}
   </div>
   <div class="tabs">
     <button class="tab active" id="tab-btn-shopping">📋 採買</button>
+    <button class="tab" id="tab-btn-deals">🏷️ 特價</button>
     <button class="tab" id="tab-btn-history">📂 紀錄</button>
     <button class="tab" id="tab-btn-insight">📊 洞察</button>
   </div>
@@ -158,6 +173,11 @@ canvas{display:block;max-width:100%}
   </div>
 
   <!-- History Tab -->
+  <!-- Deals Tab -->
+  <div id="tab-deals" class="content hidden">
+    <div id="deals-content"></div>
+  </div>
+
   <div id="tab-history" class="content hidden">
     <div id="history-list"></div>
   </div>
@@ -199,6 +219,7 @@ pillsEl.addEventListener('click',function(e){
 });
 
 document.getElementById('tab-btn-shopping').addEventListener('click',function(){switchTab('shopping');});
+document.getElementById('tab-btn-deals').addEventListener('click',function(){switchTab('deals');});
 document.getElementById('tab-btn-history').addEventListener('click',function(){switchTab('history');});
 document.getElementById('tab-btn-insight').addEventListener('click',function(){switchTab('insight');});
 document.getElementById('add-btn').addEventListener('click',function(){openForm(null);});
@@ -210,12 +231,56 @@ document.getElementById('item-qty').addEventListener('input',function(){updateSu
 document.getElementById('item-price').addEventListener('input',function(){updateSubtotal();});
 
 function switchTab(tab){
-  ['shopping','history','insight'].forEach(function(t){
+  ['shopping','deals','history','insight'].forEach(function(t){
     document.getElementById('tab-'+t).classList.toggle('hidden',t!==tab);
     document.getElementById('tab-btn-'+t).className='tab'+(t===tab?' active':'');
   });
   if(tab==='history')renderHistory();
   if(tab==='insight')renderInsight();
+  if(tab==='deals')renderDeals();
+}
+
+var dealsCache=null;
+function renderDeals(){
+  var el=document.getElementById('deals-content');
+  if(dealsCache){renderDealsData(dealsCache);return;}
+  el.innerHTML='<div class="deals-loading">載入特價資料中…</div>';
+  fetch('deals.json?t='+Date.now())
+    .then(function(r){return r.json();})
+    .then(function(data){dealsCache=data;renderDealsData(data);})
+    .catch(function(){el.innerHTML='<div class="deals-empty">⚠️ 無法載入特價資料<br>請稍後再試</div>';});
+}
+function renderDealsData(data){
+  var el=document.getElementById('deals-content');
+  var total=(data.coupons||[]).length+(data.new_items||[]).length+(data.hot_buys||[]).length;
+  if(total===0){
+    el.innerHTML='<div class="deals-empty">🏷️<br><br>今日還沒有特價資料<br>每天早上 10 點自動更新</div>';
+    return;
+  }
+  var html='<div class="deals-updated">更新時間：'+(data.updated||'—')+'</div>';
+  function renderSection(title,items){
+    if(!items||!items.length)return;
+    html+='<div class="deals-section-title">'+title+'</div>';
+    items.forEach(function(item){
+      var badge=item.online_only
+        ?'<span class="deal-badge badge-online">僅線上</span>'
+        :'<span class="deal-badge badge-store">門市/線上</span>';
+      var img=item.image
+        ?'<img class="deal-img" src="'+item.image+'" onerror="this.style.display=\'none\'">'
+        :'<div class="deal-img-placeholder">🏷️</div>';
+      var price=item.price?'NT$ '+item.price.toLocaleString():'';
+      html+='<div class="deal-card">'+img+'<div class="deal-info"><div class="deal-name">'+item.name+badge+'</div><div class="deal-price">'+price+'</div></div><button class="deal-add-btn" onclick="addDealToList(\''+item.name.replace(/'/g,"\\'")+(item.price?'\','+item.price:'\',0')+')">加入清單</button></div>';
+    });
+  }
+  renderSection('🎫 優惠券特價（全台門市含中和店）',data.coupons);
+  renderSection('🆕 新品上市',data.new_items);
+  renderSection('⚡ 限時優惠（僅線上）',data.hot_buys);
+  el.innerHTML=html;
+}
+function addDealToList(name,price){
+  items.push({id:Date.now(),cat:'其他',name:name,qty:'1',price:String(price||0)});
+  switchTab('shopping');
+  renderItems();updateTotal();
 }
 
 function openForm(id){
