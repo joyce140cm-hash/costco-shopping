@@ -110,9 +110,16 @@ canvas{display:block;max-width:100%}
 .deal-add-btn{background:#d42b2b;color:#fff;border:none;border-radius:8px;padding:7px 12px;font-size:12px;font-weight:700;white-space:nowrap;touch-action:manipulation}
 .deals-empty{text-align:center;padding:40px 20px;color:#bbb;font-size:14px}
 .deals-loading{text-align:center;padding:40px 20px;color:#aaa;font-size:14px}
+/* Toast */
+.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);background:rgba(0,0,0,.82);color:#fff;padding:10px 20px;border-radius:24px;font-size:13px;font-weight:600;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;z-index:999;white-space:nowrap}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+/* Share */
+.share-btn{display:flex;align-items:center;gap:6px;padding:8px 14px;background:#fff;border:1.5px solid #d42b2b;color:#d42b2b;border-radius:8px;font-size:13px;font-weight:700;margin-bottom:12px;width:100%;justify-content:center;touch-action:manipulation}
+.share-url-box{background:#f7f8fa;border:1.5px solid #eee;border-radius:8px;padding:10px 12px;font-size:11px;color:#555;word-break:break-all;margin-bottom:10px;line-height:1.5}
 </style>
 </head>
 <body>
+<div id="toast" class="toast"></div>
 <div class="app">
   <div class="header">
     <div class="header-sub">COSTCO 採購紀錄</div>
@@ -176,6 +183,10 @@ canvas{display:block;max-width:100%}
     </div>
     <button class="add-btn" id="add-btn">＋ 新增品項</button>
     <button class="finish-btn hidden" id="finish-btn">✅ 結束採買，儲存紀錄</button>
+    <button class="share-btn hidden" id="share-btn">🔗 分享清單給家人</button>
+    <div id="share-url-area" class="hidden">
+      <div class="share-url-box" id="share-url-text"></div>
+    </div>
     <div class="saved-msg hidden" id="saved-msg">✓ 已儲存！清單已重置</div>
   </div>
 
@@ -233,6 +244,7 @@ document.getElementById('add-btn').addEventListener('click',function(){openForm(
 document.getElementById('save-btn').addEventListener('click',function(){saveItem();});
 document.getElementById('cancel-btn').addEventListener('click',function(){closeForm();});
 document.getElementById('finish-btn').addEventListener('click',function(){finishShopping();});
+document.getElementById('share-btn').addEventListener('click',function(){shareList();});
 document.getElementById('budget-input').addEventListener('input',function(){updateTotal();});
 document.getElementById('item-qty').addEventListener('input',function(){updateSubtotal();});
 document.getElementById('item-price').addEventListener('input',function(){updateSubtotal();});
@@ -245,6 +257,31 @@ function switchTab(tab){
   if(tab==='history')renderHistory();
   if(tab==='insight')renderInsight();
   if(tab==='deals')renderDeals();
+}
+
+// === Toast ===
+var toastTimer=null;
+function showToast(msg){
+  var el=document.getElementById('toast');
+  el.textContent=msg;
+  el.classList.add('show');
+  if(toastTimer)clearTimeout(toastTimer);
+  toastTimer=setTimeout(function(){el.classList.remove('show');},2800);
+}
+
+// === 時間格式 ===
+function timeAgo(str){
+  if(!str)return'—';
+  var d=new Date(str.replace(' ','T'));
+  if(isNaN(d))return str;
+  var diff=Date.now()-d.getTime();
+  var mins=Math.floor(diff/60000);
+  if(mins<1)return'剛剛更新';
+  if(mins<60)return mins+'分鐘前更新';
+  var hrs=Math.floor(mins/60);
+  if(hrs<24)return hrs+'小時前更新';
+  var days=Math.floor(hrs/24);
+  return days+'天前更新';
 }
 
 var dealsCache=null;
@@ -264,7 +301,7 @@ function renderDealsData(data){
     el.innerHTML='<div class="deals-empty">🏷️<br><br>今日還沒有特價資料<br>每天早上 10 點自動更新</div>';
     return;
   }
-  var html='<div class="deals-updated">更新時間：'+(data.updated||'—')+'</div>';
+  var html='<div class="deals-updated">'+timeAgo(data.updated)+'</div>';
   function renderSection(title,items){
     if(!items||!items.length)return;
     html+='<div class="deals-section-title">'+title+'</div>';
@@ -352,10 +389,12 @@ function renderItems(){
   var empty=document.getElementById('empty-state');
   var countEl=document.getElementById('item-count');
   var finishBtn=document.getElementById('finish-btn');
-  if(items.length===0){list.innerHTML='';empty.classList.remove('hidden');countEl.classList.add('hidden');finishBtn.classList.add('hidden');return;}
+  var shareBtn=document.getElementById('share-btn');
+  if(items.length===0){list.innerHTML='';empty.classList.remove('hidden');countEl.classList.add('hidden');finishBtn.classList.add('hidden');shareBtn.classList.add('hidden');document.getElementById('share-url-area').classList.add('hidden');return;}
   empty.classList.add('hidden');countEl.classList.remove('hidden');
   countEl.textContent='共 '+items.length+' 項商品';
   finishBtn.classList.remove('hidden');
+  shareBtn.classList.remove('hidden');
   var html='';
   CATS.forEach(function(cat){
     var catItems=items.filter(function(i){return i.cat===cat;});
@@ -376,6 +415,7 @@ function renderItems(){
   });
 }
 
+var _lastPct=0;
 function updateTotal(){
   var total=items.reduce(function(s,i){return s+(parseFloat(i.price)||0)*(parseInt(i.qty)||1);},0);
   var budget=parseFloat(document.getElementById('budget-input').value)||0;
@@ -391,9 +431,15 @@ function updateTotal(){
     bar.classList.remove('hidden');
     fill.style.width=pct+'%';
     fill.style.background=over?'#e53935':pct>80?'#fb8c00':'#43a047';
-    if(over){sub.textContent='超出預算 NT$ '+(total-budget).toLocaleString()+'！';sub.className='total-sub over';}
-    else{sub.textContent='還剩 NT$ '+(budget-total).toLocaleString();sub.className='total-sub';}
-  } else {bar.classList.add('hidden');sub.textContent='';}
+    if(over){
+      sub.textContent='超出預算 NT$ '+(total-budget).toLocaleString()+'！';sub.className='total-sub over';
+      if(_lastPct<100)showToast('⚠️ 已超出預算！');
+    } else {
+      sub.textContent='還剩 NT$ '+(budget-total).toLocaleString();sub.className='total-sub';
+      if(_lastPct<80&&pct>=80)showToast('⚠️ 已使用 80% 預算，剩 NT$ '+(budget-total).toLocaleString());
+    }
+    _lastPct=pct;
+  } else {bar.classList.add('hidden');sub.textContent='';_lastPct=0;}
 }
 
 function finishShopping(){
@@ -568,6 +614,45 @@ function renderInsight(){
       ctx.fillText(grandTotal.toLocaleString(),cx,cy+12);
     }
   }
+}
+
+// === 分享清單 ===
+function shareList(){
+  if(!items.length)return;
+  var payload=btoa(encodeURIComponent(JSON.stringify(items)));
+  var url=location.href.split('#')[0]+'#share='+payload;
+  var area=document.getElementById('share-url-area');
+  var textEl=document.getElementById('share-url-text');
+  textEl.textContent=url;
+  area.classList.remove('hidden');
+  if(navigator.share){
+    navigator.share({title:'好市多採買清單',url:url}).catch(function(){});
+  } else if(navigator.clipboard){
+    navigator.clipboard.writeText(url).then(function(){showToast('✅ 連結已複製！');});
+  } else {
+    showToast('✅ 連結已產生，請長按複製');
+  }
+}
+
+// === 從 URL 載入分享清單 ===
+(function(){
+  var hash=location.hash;
+  if(hash&&hash.indexOf('#share=')===0){
+    try{
+      var payload=hash.replace('#share=','');
+      var loaded=JSON.parse(decodeURIComponent(atob(payload)));
+      if(Array.isArray(loaded)&&loaded.length){
+        items=loaded;
+        showToast('📋 已載入家人分享的清單');
+      }
+    }catch(e){}
+    history.replaceState(null,'',location.pathname);
+  }
+})();
+
+// === Service Worker ===
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js').catch(function(){});
 }
 
 renderItems();
