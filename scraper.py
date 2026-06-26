@@ -110,11 +110,18 @@ def scrape_page(page, url, category_name, online_only=False):
                     }
                 }
 
-                // ⑤ 圖片
+                // ⑤ 圖片 + alt 當品名備用
                 const imgEl = tile.querySelector('img');
                 if (imgEl) {
                     img = imgEl.src || imgEl.dataset.src || imgEl.dataset.lazySrc || null;
                     if (img && img.startsWith('data:')) img = imgEl.dataset.src || null;
+                    // img alt 通常是商品名
+                    if (!name && imgEl.alt && imgEl.alt.trim().length > 3) {
+                        const altText = imgEl.alt.trim();
+                        if (!altText.includes('加入') && !altText.startsWith('*')) {
+                            name = altText;
+                        }
+                    }
                 }
 
                 if (name && name.length > 2) {
