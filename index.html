@@ -310,10 +310,13 @@ function renderDealsData(data){
         ?'<span class="deal-badge badge-online">僅線上</span>'
         :'<span class="deal-badge badge-store">門市/線上</span>';
       var img=item.image
-        ?'<img class="deal-img" src="'+item.image+'" onerror="this.style.display=\'none\'">'
+        ?'<img class="deal-img" src="'+item.image+'" onerror="this.parentNode.innerHTML=\'<div class=\\\"deal-img-placeholder\\\">🏷️</div>\'">'
         :'<div class="deal-img-placeholder">🏷️</div>';
-      var price=item.price?'NT$ '+item.price.toLocaleString():'';
-      html+='<div class="deal-card">'+img+'<div class="deal-info"><div class="deal-name">'+item.name+badge+'</div><div class="deal-price">'+price+'</div></div><button class="deal-add-btn" onclick="addDealToList(\''+item.name.replace(/'/g,"\\'")+(item.price?'\','+item.price:'\',0')+')">加入清單</button></div>';
+      var price=item.price?'NT$ '+item.price.toLocaleString():'價格未公開';
+      var nameHtml=item.link
+        ?'<a href="'+item.link+'" target="_blank" style="color:#222;text-decoration:none">'+item.name+'</a>'
+        :item.name;
+      html+='<div class="deal-card">'+img+'<div class="deal-info"><div class="deal-name">'+nameHtml+badge+'</div><div class="deal-price">'+price+'</div></div><button class="deal-add-btn" onclick="addDealToList(\''+item.name.replace(/'/g,"\\'")+(item.price?'\','+item.price:'\',0')+')">加入清單</button></div>';
     });
   }
   renderSection('🎫 優惠券特價（全台門市含中和店）',data.coupons);
