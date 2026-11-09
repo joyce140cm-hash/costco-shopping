@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08 08:11",
+  "updated": "2026-11-09 08:47",
   "note": "優惠券/新品：全台門市（含中和店）適用。限時優惠：僅限線上購物。",
   "coupons": [
     {
@@ -33,21 +33,14 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hfe/h22/362186392567838.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h4b/h27/261465740410910.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hff/hb1/488919036755998.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h95/hdc/65294096039966.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
@@ -68,7 +61,14 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h40/h31/439233883897886.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h95/hdc/65294096039966.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hff/hb1/488919036755998.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
@@ -76,6 +76,20 @@
       "name": "雙11優惠・限時7天",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h80/h24/346620755312670.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hcd/hb4/105007594438686.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h40/h31/439233883897886.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
@@ -96,42 +110,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hcd/hb4/105007594438686.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h00/hca/492247856218142.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h30/hee/256217672712222.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h4c/h0a/467794334679070.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h3c/haa/157251979903006.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h94/h03/118701813760030.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
@@ -145,21 +124,14 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h77/hb0/488919008116766.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h65/hd9/415897346277406.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h33/hc8/12522591715358.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h10/hfc/413801495330846.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h30/hee/256217672712222.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
@@ -173,21 +145,28 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h94/hea/259146868817950.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h00/hca/492247856218142.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hc2/h84/449275193819166.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h77/hb0/488919008116766.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h28/hd0/102276188930078.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h10/hfc/413801495330846.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h33/hc8/12522591715358.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
@@ -201,7 +180,28 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h4c/h0a/467794334679070.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hc2/h84/449275193819166.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h82/h57/120613024890910.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h94/hea/259146868817950.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
@@ -215,20 +215,6 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf3/h20/101464523800606.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h62/h56/368770704965662.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/haf/hd6/508720153427998.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
@@ -236,35 +222,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h75/h9c/122430601134110.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf3/h34/11133446750238.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf7/h75/11133447077918.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h52/509161261924382.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h8e/hd6/11133448060958.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h28/hd0/102276188930078.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     },
@@ -278,19 +236,54 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hf7/h75/11133447077918.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hf3/h34/11133446750238.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h58/haa/295028946075678.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h8e/hd6/11133448060958.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h81/h8f/226392017371166.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h62/h92/312615946485790.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h73/h23/508720156573726.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "優惠券特價"
     }
   ],
   "new_items": [
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf9/hdf/507675125252126.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "新品上市"
-    },
     {
       "name": "HoverAir X1 Smart 哈浮飛行相機",
       "price": null,
@@ -303,6 +296,20 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h2e/h6b/490097984241694.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
+      "category": "新品上市"
+    },
+    {
+      "name": "東芝 85吋 4K 180Hz RGB Mini LED VIDAA 智慧顯示器 85ZXSP",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/he0/h94/504581723815966.jpg",
+      "link": "https://www.costco.com.tw/Televisions-Appliances/TV-Home-Entertainment/Televisions-TV-Accessories/80-Above-TVs/TOSHIBA-85-inch-4K-180Hz-RGB-Mini-LED-VIDAA-Smart-Monitor-85ZXSP/p/161087",
+      "category": "新品上市"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h42/he8/502266177650718.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
     {
@@ -322,7 +329,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h42/he8/502266177650718.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h86/hb3/507675067056158.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
@@ -343,7 +350,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h86/hb3/507675067056158.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hae/h54/505689567100958.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
@@ -357,7 +364,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hae/h54/505689567100958.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h9c/h5e/506938238697502.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
@@ -371,21 +378,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h84/h0b/507674955907102.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "新品上市"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h60/h90/492430001078302.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "新品上市"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h3f/h9c/506669031587870.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h4c/h6b/468568684429342.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
@@ -393,6 +386,13 @@
       "name": "雙11優惠・限時7天",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h6a/hfa/522083758211102.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "新品上市"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/he8/hdc/485340850257950.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
@@ -413,14 +413,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h4c/h6b/468568684429342.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "新品上市"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/he8/hdc/485340850257950.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h6c/h82/507674582220830.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
@@ -434,20 +427,6 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h65/hd5/505689697124382.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "新品上市"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h6c/h82/507674582220830.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "新品上市"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h27/h40/522083757948958.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
@@ -455,21 +434,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h9b/h7a/505689324159006.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "新品上市"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hd9/h67/522083839016990.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "新品上市"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h80/h25/522083740221470.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h74/hda/470130287771678.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
@@ -511,14 +476,28 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hae/he3/501515251187742.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h5d/h38/501515184013342.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hc5/h70/522083763191838.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h80/h25/522083740221470.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "新品上市"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hd9/h67/522083839016990.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "新品上市"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/ha2/h32/492247689232414.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
@@ -526,13 +505,6 @@
       "name": "雙11優惠・限時7天",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h82/509539691528222.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "新品上市"
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h9f/h38/509539691659294.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     },
@@ -553,6 +525,27 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hc5/h70/522083763191838.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "新品上市"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hae/he3/501515251187742.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "新品上市"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h9f/h38/509539691659294.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "新品上市"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h86/h8d/520191965790238.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
@@ -560,7 +553,14 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h5d/h38/501515184013342.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h14/h22/509539692511262.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "新品上市"
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h3b/h3b/501515185160222.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "新品上市"
     }
@@ -569,7 +569,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h77/hb0/488919008116766.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hb2/h8f/275511568728094.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -599,14 +599,6 @@
       "online_only": true
     },
     {
-      "name": "TCL 12公斤 變頻直立式洗衣機 P312TLG",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h4e/h19/363590599442462.jpg",
-      "link": "https://www.costco.com.tw/Televisions-Appliances/Large-Appliances/Washers-Dryers/Washer-Size-10-15-kg/TCL-12-kg-Top-Load-Inverter-Washer-P312TLG/p/149471",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
       "name": "雙11優惠・限時7天",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h22/hb5/415043989471262.jpg",
@@ -617,7 +609,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hb2/h8f/275511568728094.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hb8/ha0/485751101751326.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -657,23 +649,15 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hfe/h22/362186392567838.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h4b/h27/261465740410910.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hff/hb1/488919036755998.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h95/hdc/65294096039966.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -697,8 +681,16 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h40/h31/439233883897886.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h95/hdc/65294096039966.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "速配限區隔日達",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hff/hb1/488919036755998.jpg",
+      "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "限時優惠",
       "online_only": true
     },
@@ -706,6 +698,22 @@
       "name": "雙11優惠・限時7天",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h80/h24/346620755312670.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hcd/hb4/105007594438686.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h40/h31/439233883897886.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -729,47 +737,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hcd/hb4/105007594438686.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h00/hca/492247856218142.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h30/hee/256217672712222.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h4c/h0a/467794334679070.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h3c/haa/157251979903006.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h94/h03/118701813760030.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -785,7 +753,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h33/hc8/12522591715358.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h65/hd9/415897346277406.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -793,7 +761,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h10/hfc/413801495330846.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h30/hee/256217672712222.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -809,7 +777,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h94/hea/259146868817950.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h00/hca/492247856218142.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -817,7 +785,7 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hc2/h84/449275193819166.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h77/hb0/488919008116766.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -825,7 +793,15 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h28/hd0/102276188930078.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h10/hfc/413801495330846.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h33/hc8/12522591715358.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -841,7 +817,31 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h4c/h0a/467794334679070.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hc2/h84/449275193819166.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h82/h57/120613024890910.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h94/hea/259146868817950.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
@@ -857,22 +857,6 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf3/h20/101464523800606.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h62/h56/368770704965662.jpg",
-      "link": "https://www.costco.com.tw/c/hot-buys",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "雙11優惠・限時7天",
-      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/haf/hd6/508720153427998.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
@@ -881,7 +865,23 @@
     {
       "name": "雙11優惠・限時7天",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h75/h9c/122430601134110.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h28/hd0/102276188930078.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h1e/h3d/137143955783710.jpg",
+      "link": "https://www.costco.com.tw/c/hot-buys",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "雙11優惠・限時7天",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hf7/h75/11133447077918.jpg",
       "link": "https://www.costco.com.tw/c/hot-buys",
       "category": "限時優惠",
       "online_only": true
