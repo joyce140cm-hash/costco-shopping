@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 08:51",
+  "updated": "2026-11-14 08:13",
   "note": "優惠券/新品：全台門市（含中和店）適用。限時優惠：僅限線上購物。",
   "coupons": [
     {
@@ -82,7 +82,7 @@
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf3/h34/11133446750238.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h39/h40/259146867834910.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "優惠券特價"
     },
@@ -94,17 +94,17 @@
       "category": "優惠券特價"
     },
     {
-      "name": "速配限區隔日達",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h39/h40/259146867834910.jpg",
-      "link": "https://www.costco.com.tw/c/QuickShip",
-      "category": "優惠券特價"
-    },
-    {
       "name": "翠果子 綜合米果 20公克 X 30包 X 4盒",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h28/h8e/168536159420446.jpg",
       "link": "https://www.costco.com.tw/Business-Delivery/Food-Beverages-Pet-Supplies/Grains-Nuts-Snacks/Trygoodz-Rice-Crackers-with-Almonds-20-g-X-30-Bag-X-4-Case/p/211681",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "速配限區隔日達",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hf3/h34/11133446750238.jpg",
+      "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "優惠券特價"
     },
     {
@@ -122,10 +122,10 @@
       "category": "優惠券特價"
     },
     {
-      "name": "速配限區隔日達",
+      "name": "雀巢 奇巧迷你威化繽紛組 718公克",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h8e/hd6/11133448060958.jpg",
-      "link": "https://www.costco.com.tw/c/QuickShip",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hb2/h2c/506938228801566.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Nestle-KitKat-mini-mix-Share-Bag-718-g/p/311188",
       "category": "優惠券特價"
     },
     {
@@ -136,10 +136,10 @@
       "category": "優惠券特價"
     },
     {
-      "name": "雀巢 奇巧迷你威化繽紛組 718公克",
+      "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hb2/h2c/506938228801566.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Nestle-KitKat-mini-mix-Share-Bag-718-g/p/311188",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h8e/hd6/11133448060958.jpg",
+      "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "優惠券特價"
     },
     {
@@ -166,21 +166,21 @@
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h49/he4/379632643866654.jpg",
-      "link": "https://www.costco.com.tw/c/QuickShip",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "速配限區隔日達",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hac/h9a/294120768700446.jpg",
-      "link": "https://www.costco.com.tw/c/QuickShip",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "速配限區隔日達",
-      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h51/h4d/69411745955870.jpg",
+      "link": "https://www.costco.com.tw/c/QuickShip",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "易可多 環保水管疏通劑 1公升 X 2入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h96/h44/403519328190494.jpg",
+      "link": "https://www.costco.com.tw/Household-Baby-Toys/Household-Essentials/Cleaning-Supplies/Ecodoo-Drain-Cleaner-1-L-X-2-Count/p/1137346",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "速配限區隔日達",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h49/he4/379632643866654.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "優惠券特價"
     },
@@ -194,21 +194,7 @@
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/ha8/h61/326879449055262.jpg",
-      "link": "https://www.costco.com.tw/c/QuickShip",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "清淨海 檸檬泡泡碗盤洗滌噴霧 鳳梨酵素 400公克 X 2入 + 補充瓶 X 2入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h67/h28/397823951601694.jpg",
-      "link": "https://www.costco.com.tw/Household-Baby-Toys/Household-Essentials/Dish-Detergents/Seamild-Lemon-Dish-Washing-Spray-400-g-X-2-Count-Refill-X-2-Count/p/157408",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "速配限區隔日達",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hbf/h43/168535914905630.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hac/h9a/294120768700446.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "優惠券特價"
     },
@@ -229,14 +215,28 @@
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h4c/h0a/467794334679070.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hbf/h43/168535914905630.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "健康力 高鈣凍 45入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hdc/h29/378822011879454.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Bone-Joint-Support/Dr-Advice-Calcium-Jelly-45-Pack/p/148430",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "清淨海 檸檬泡泡碗盤洗滌噴霧 鳳梨酵素 400公克 X 2入 + 補充瓶 X 2入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h67/h28/397823951601694.jpg",
+      "link": "https://www.costco.com.tw/Household-Baby-Toys/Household-Essentials/Dish-Detergents/Seamild-Lemon-Dish-Washing-Spray-400-g-X-2-Count-Refill-X-2-Count/p/157408",
       "category": "優惠券特價"
     },
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h8e/h7a/11133445963806.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/ha8/h61/326879449055262.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "優惠券特價"
     },
@@ -248,10 +248,10 @@
       "category": "優惠券特價"
     },
     {
-      "name": "健康力 高鈣凍 45入",
+      "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hdc/h29/378822011879454.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Bone-Joint-Support/Dr-Advice-Calcium-Jelly-45-Pack/p/148430",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h8e/h7a/11133445963806.jpg",
+      "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "優惠券特價"
     },
     {
@@ -259,13 +259,6 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h26/h7f/413801443885086.jpg",
       "link": "https://www.costco.com.tw/Household-Baby-Toys/Pet-Supplies/Pet-Treats-Health/Autzen-Freeze-Dried-Pet-Treat-Chicken-Flavor-10-g-X-30-Count/p/157771",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "易可多 有機環保蘆薈馬鞭草洗碗精 500毫升 X 4入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hd1/h2e/119403321294878.jpg",
-      "link": "https://www.costco.com.tw/Household-Baby-Toys/Household-Essentials/Dish-Detergents/Ecodoo-Gentle-Eco-Verbena-Dishwashing-Liquid-500-ml-X-4-Pack/p/1137338",
       "category": "優惠券特價"
     },
     {
@@ -278,7 +271,14 @@
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h24/h5b/172356639883294.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h6a/h34/64684741656606.jpg",
+      "link": "https://www.costco.com.tw/c/QuickShip",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "速配限區隔日達",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h4c/h0a/467794334679070.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "優惠券特價"
     }
@@ -320,6 +320,13 @@
       "category": "新品上市"
     },
     {
+      "name": "滿意寶寶 哆啦A夢輕巧褲 XXL號 104片",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h88/490098123145246.jpg",
+      "link": "https://www.costco.com.tw/Household-Baby-Toys/Baby/Baby-Diapers-Wipes/MamyPoko-Diaper-Pants-Doraemon-Edition-Size-XXL-104-Piece/p/626088",
+      "category": "新品上市"
+    },
+    {
       "name": "王品 冷凍青花驕經典麻辣鍋 1.6公斤",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h1f/h74/506938232668190.jpg",
@@ -348,6 +355,13 @@
       "category": "新品上市"
     },
     {
+      "name": "速配限區隔日達",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hae/h54/505689567100958.jpg",
+      "link": "https://www.costco.com.tw/c/QuickShip",
+      "category": "新品上市"
+    },
+    {
       "name": "滿意寶寶 瞬潔乾爽紙尿褲 XXL號 120片",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h71/hb1/507674928709662.jpg",
@@ -357,7 +371,7 @@
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hae/h54/505689567100958.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hae/h37/520917127069726.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "新品上市"
     },
@@ -366,13 +380,6 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hec/h9c/522083762077726.jpg",
       "link": "https://www.costco.com.tw/Clothing-Accessories/Womens-Clothing/Womens-Socks-Intimates/Gunze-Ladies-Fleece-Vest-Black/p/160684",
-      "category": "新品上市"
-    },
-    {
-      "name": "速配限區隔日達",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hae/h37/520917127069726.jpg",
-      "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "新品上市"
     },
     {
@@ -425,6 +432,13 @@
       "category": "新品上市"
     },
     {
+      "name": "速配限區隔日達",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hb4/hfd/520192213811230.jpg",
+      "link": "https://www.costco.com.tw/c/QuickShip",
+      "category": "新品上市"
+    },
+    {
       "name": "更多選擇",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hd1/h9a/522083743662110.jpg",
@@ -436,13 +450,6 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hc5/h70/522083763191838.jpg",
       "link": "https://www.costco.com.tw/Clothing-Accessories/Womens-Clothing/Womens-Socks-Intimates/AS-Ladies-Silk-Cotton-High-Neck-Top-Light-Gray/p/160683",
-      "category": "新品上市"
-    },
-    {
-      "name": "速配限區隔日達",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hb4/hfd/520192213811230.jpg",
-      "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "新品上市"
     },
     {
@@ -471,6 +478,13 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h11/h78/522083752378398.jpg",
       "link": "https://www.costco.com.tw/Clothing-Accessories/Womens-Clothing/Womens-Socks-Intimates/VOLLEY-Fleece-Leggings-Dark-Blue/p/160675",
+      "category": "新品上市"
+    },
+    {
+      "name": "速配限區隔日達",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h42/he8/502266177650718.jpg",
+      "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "新品上市"
     },
     {
@@ -511,36 +525,15 @@
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h5a/hd3/503356581675038.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h65/522406027526174.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "新品上市"
     },
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h65/522406027526174.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h5a/hd3/503356581675038.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
-      "category": "新品上市"
-    },
-    {
-      "name": "Recolte 蒸氣氣炸鍋 RAO-3",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/he8/hdc/485340850257950.jpg",
-      "link": "https://www.costco.com.tw/Televisions-Appliances/Kitchen-Appliances/Cookers-Oven-Microwaves-Food-Waste-Machine/Recolte-Air-Fryer-RAO-3/p/162333",
-      "category": "新品上市"
-    },
-    {
-      "name": "Recolte 食物調理機 RCP-3 (有線版)",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h53/hb6/490481139548190.jpg",
-      "link": "https://www.costco.com.tw/p/162967",
-      "category": "新品上市"
-    },
-    {
-      "name": "更多選擇",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hdd/h11/508720177283102.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/New-Year-Dishes/Pre-Order-Lao-Xie-Zhen-Frozen-Lunar-New-Year-8-Dishes-Set/p/276388",
       "category": "新品上市"
     },
     {
@@ -551,17 +544,24 @@
       "category": "新品上市"
     },
     {
-      "name": "速配限區隔日達",
+      "name": "Recolte 食物調理機 RCP-3 (有線版)",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h67/h2a/509160806580254.jpg",
-      "link": "https://www.costco.com.tw/c/QuickShip",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h53/hb6/490481139548190.jpg",
+      "link": "https://www.costco.com.tw/Televisions-Appliances/Kitchen-Appliances/Coffee-Machines-Blenders-Juicers/Recolte-Food-Chopper-RCP-3/p/162967",
       "category": "新品上市"
     },
     {
-      "name": "速配限區隔日達",
+      "name": "Recolte 蒸氣氣炸鍋 RAO-3",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h06/hb8/522215712784414.jpg",
-      "link": "https://www.costco.com.tw/c/QuickShip",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/he8/hdc/485340850257950.jpg",
+      "link": "https://www.costco.com.tw/Televisions-Appliances/Kitchen-Appliances/Cookers-Oven-Microwaves-Food-Waste-Machine/Recolte-Air-Fryer-RAO-3/p/162333",
+      "category": "新品上市"
+    },
+    {
+      "name": "更多選擇",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hdd/h11/508720177283102.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/New-Year-Dishes/Pre-Order-Lao-Xie-Zhen-Frozen-Lunar-New-Year-8-Dishes-Set/p/276388",
       "category": "新品上市"
     }
   ],
@@ -785,7 +785,7 @@
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hc2/hb2/221944451825694.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h9c/h19/33758106255390.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "限時優惠",
       "online_only": true
@@ -793,7 +793,7 @@
     {
       "name": "速配限區隔日達",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h9c/h19/33758106255390.jpg",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hc2/hb2/221944451825694.jpg",
       "link": "https://www.costco.com.tw/c/QuickShip",
       "category": "限時優惠",
       "online_only": true
@@ -823,10 +823,10 @@
       "online_only": true
     },
     {
-      "name": "大成 冷凍椒鹽薄皮炸雞 1.55公斤",
+      "name": "滿意寶寶 哆啦A夢輕巧褲 XXL號 104片",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hce/h0e/203141682593822.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/Frozen-Meals/Dachan-Frozen-Lightly-Breaded-Crispy-Fried-Chicken-155-kg/p/143877",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h88/490098123145246.jpg",
+      "link": "https://www.costco.com.tw/Household-Baby-Toys/Baby/Baby-Diapers-Wipes/MamyPoko-Diaper-Pants-Doraemon-Edition-Size-XXL-104-Piece/p/626088",
       "category": "限時優惠",
       "online_only": true
     },
@@ -835,6 +835,14 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h29/h51/439613357260830.jpg",
       "link": "https://www.costco.com.tw/Health-Beauty/Elderly-Care/Nutritional-Drinks/Meiji-Mei-Balance-Mini-Cup-Strawberry-low-sugar-Flavor-125-ml-X-36-Count/p/244328",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "大成 冷凍椒鹽薄皮炸雞 1.55公斤",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hce/h0e/203141682593822.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/Frozen-Meals/Dachan-Frozen-Lightly-Breaded-Crispy-Fried-Chicken-155-kg/p/143877",
       "category": "限時優惠",
       "online_only": true
     },
@@ -859,14 +867,6 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h56/ha5/281047508811806.jpg",
       "link": "https://www.costco.com.tw/Digital-Mobile/Mobile-Tablets/Mobile-Tablets-Accessories/Looploop-Tag-AT-10-Item-Finders-With-Accessories-4-pack/p/147738",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "大拙匠人 鵝油雙葱煎餅 100公克 X 4片X 5包",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h28/hbf/413801340469278.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/Frozen-Meals/Gourmet-Goose-Oil-Shallot-Scallion-Thick-Pancake-100-g-X-4-Piece-X-5-Count/p/156747",
       "category": "限時優惠",
       "online_only": true
     },
