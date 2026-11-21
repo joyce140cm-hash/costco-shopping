@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20 09:21",
+  "updated": "2026-11-21 08:55",
   "note": "優惠券/新品：全台門市（含中和店）適用。限時優惠：僅限線上購物。",
   "coupons": [
     {
@@ -13,7 +13,7 @@
       "name": "飛利浦 旋護式攜帶式電鬍刀 RQ912/05",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hbc/h06/509161144746014.jpg",
-      "link": "https://www.costco.com.tw/Televisions-Appliances/Small-Appliances/Hair-Skin-Care-Tools/Philips-Portable-Electric-Shaver-RQ91205/p/163039",
+      "link": "https://www.costco.com.tw/Hair-Skin-Care-Tools/p/163039",
       "category": "優惠券特價"
     },
     {
@@ -38,13 +38,6 @@
       "category": "優惠券特價"
     },
     {
-      "name": "Mariani 棗乾 850公克",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h10/hfc/413801495330846.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Nuts-Jerky/Mariani-Dried-Dates-850-g/p/3319570",
-      "category": "優惠券特價"
-    },
-    {
       "name": "棕欖 橄欖精萃保濕沐浴乳 4公斤",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/he3/h33/245667626713118.jpg",
@@ -55,7 +48,7 @@
       "name": "My Motto 威化餅 雙重巧克力風味 30公克 X 20包",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hdf/hcd/361958094733342.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/p/263941",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/My-Motto-Premium-Wafers-Cocoa-Cocoa-Flavor-30-g-X-20-Pack/p/263941",
       "category": "優惠券特價"
     },
     {
@@ -66,17 +59,17 @@
       "category": "優惠券特價"
     },
     {
-      "name": "Richy 瑞奇 富裕蔬菜餅 960公克",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h28/h32/344500441415710.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Richy-Kenju-Vegetable-Thin-Cracker-960-g/p/151283",
-      "category": "優惠券特價"
-    },
-    {
       "name": "翠果子 綜合米果 20公克 X 30包 X 4盒",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h28/h8e/168536159420446.jpg",
       "link": "https://www.costco.com.tw/Business-Delivery/Food-Beverages-Pet-Supplies/Grains-Nuts-Snacks/Trygoodz-Rice-Crackers-with-Almonds-20-g-X-30-Bag-X-4-Case/p/211681",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "Richy 瑞奇 富裕蔬菜餅 960公克",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h28/h32/344500441415710.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Richy-Kenju-Vegetable-Thin-Cracker-960-g/p/151283",
       "category": "優惠券特價"
     },
     {
@@ -94,13 +87,6 @@
       "category": "優惠券特價"
     },
     {
-      "name": "可爾必思水語 330毫升 X 24入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h30/he1/418530812231710.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Drinks/Beverages-Juice/Calpis-Yogurt-Drink-330-ml-X-24-Count/p/376899",
-      "category": "優惠券特價"
-    },
-    {
       "name": "維大力 汽水 330毫升 X 24入",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h24/h5b/172356639883294.jpg",
@@ -108,10 +94,24 @@
       "category": "優惠券特價"
     },
     {
-      "name": "PopCorners 爆米花脆片鹹甜口味 567公克",
+      "name": "樂事 番茄醬口味洋芋片 580公克",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h39/h40/259146867834910.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/PopCorners-Sweet-Salty-Kettle-Corn-Style-Flavoured-Popped-Corn-Chips-567-g/p/228888",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h92/h37/438035523174430.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Lays-Tomato-Ketchup-Flavor-Chips-580-g/p/537333",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "Hoody's 精緻果乾混綜合果仁 907公克",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hf1/hd2/65765251252254.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Nuts-Jerky/Hoodys-Harvest-Grove-Trail-Mix-907-g/p/1056107",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "雀巢美祿 高鈣可可麥芽牛奶 198毫升 X 24入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h95/hce/526007355834398.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Drinks/Beverages-Juice/p/148852",
       "category": "優惠券特價"
     },
     {
@@ -132,14 +132,14 @@
       "name": "Richy 瑞奇 迷你燕麥酥 1000公克",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hea/hdd/272954705674270.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/p/1212068",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Candies-Chocolates/Richy-Oatmeal-Mini-Bite-1000-g/p/1212068",
       "category": "優惠券特價"
     },
     {
-      "name": "雀巢 奇巧迷你威化繽紛組 718公克",
+      "name": "PopCorners 爆米花脆片鹹甜口味 567公克",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hb2/h2c/506938228801566.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/p/311188",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h39/h40/259146867834910.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/PopCorners-Sweet-Salty-Kettle-Corn-Style-Flavoured-Popped-Corn-Chips-567-g/p/228888",
       "category": "優惠券特價"
     },
     {
@@ -150,59 +150,10 @@
       "category": "優惠券特價"
     },
     {
-      "name": "樂事 濃香菜風味洋芋片 580公克",
+      "name": "雀巢 奇巧迷你威化繽紛組 718公克",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h25/he3/350052653989918.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Lays-Coriander-Flavor-Potato-Chips-580-g/p/337333",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "科克蘭 5W-30 全合成機油 946毫升 X 6入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h7e/h8b/104503650615326.jpg",
-      "link": "https://www.costco.com.tw/Automotive/p/1448217",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "樂事 番茄醬口味洋芋片 580公克",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h92/h37/438035523174430.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Lays-Tomato-Ketchup-Flavor-Chips-580-g/p/537333",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "Hoody's 精緻果乾混綜合果仁 907公克",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf1/hd2/65765251252254.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Nuts-Jerky/Hoodys-Harvest-Grove-Trail-Mix-907-g/p/1056107",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "健康力 高鈣凍 45入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hdc/h29/378822011879454.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Bone-Joint-Support/Dr-Advice-Calcium-Jelly-45-Pack/p/148430",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "力度伸 維他命B群發泡錠 柳橙口味 45錠 (15錠 X 3條)",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h8c/h18/362805066891294.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Multi-Letter-Vitamins/Redoxon-Vitamin-B-Complex-Effervescent-Orange-Flavor-45-Tablet-15-Tablet-X-3-Pack/p/990856",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "萊佳 綜合迷你威化夾心餅 800公克",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf0/hd4/413801537011742.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Loacker-Classic-Minis-Wafer-Mix-800-g/p/592361",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "雀巢美祿 高鈣可可麥芽牛奶 198毫升 X 24入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h95/hce/526007355834398.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Drinks/Beverages-Juice/p/148852",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hb2/h2c/506938228801566.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Nestle-KitKat-mini-mix-Share-Bag-718-g/p/311188",
       "category": "優惠券特價"
     },
     {
@@ -213,17 +164,66 @@
       "category": "優惠券特價"
     },
     {
-      "name": "威德 靈芝多醣 180粒",
+      "name": "力度伸 維他命B群發泡錠 柳橙口味 45錠 (15錠 X 3條)",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf1/hfb/29250086567966.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Supplements-Digestive-Support/WEIDER-Ganoderma-180-Capsules/p/78357",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h8c/h18/362805066891294.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Multi-Letter-Vitamins/Redoxon-Vitamin-B-Complex-Effervescent-Orange-Flavor-45-Tablet-15-Tablet-X-3-Pack/p/990856",
       "category": "優惠券特價"
     },
     {
-      "name": "肌研 極潤抗皺緊實高機能精華液 30公克 X 2入",
+      "name": "樂事 濃香菜風味洋芋片 580公克",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hb6/h9a/398741424439326.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Beauty-Skin-Care/Skin-Care/Hada-Labo-Gokujyun-Aging-Care-Essence-30-g-X-2-Pack/p/153470",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h25/he3/350052653989918.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Lays-Coriander-Flavor-Potato-Chips-580-g/p/337333",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "萊佳 綜合迷你威化夾心餅 800公克",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hf0/hd4/413801537011742.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Loacker-Classic-Minis-Wafer-Mix-800-g/p/592361",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "科克蘭 5W-30 全合成機油 946毫升 X 6入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h7e/h8b/104503650615326.jpg",
+      "link": "https://www.costco.com.tw/Sports-Lifestyle/Automotive/Car-Oils-Fluids/Kirkland-Signature-5W-30-Full-Synthetic-Motor-Oil-946-ml-X-6-Pack/p/1448217",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "更多選擇",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hdb/h16/489126737575966.jpg",
+      "link": "https://www.costco.com.tw/Furniture-Kitchen/Kitchen-Dining/Water-Bottles/Blender-Bottle-Stainless-Steel-Shaker-740-ml-X-2-Piece-Set/p/2051529",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "USii 防霾 PM 2.5 高強級靜電紗網",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h99/hce/310637996277790.jpg",
+      "link": "https://www.costco.com.tw/Furniture-Kitchen/Hardware-DIY/Hardware-Ladders/Usii-Anti-Haze-PM-25-Filter-Windows-Screen-Mesh/p/150694",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "CJ Bibigo 芝麻油 1 公升",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h7d/he5/328848034922526.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Groceries/Cooking-Oil-Sauces/CJ-Bibigo-Sesame-Oil-1L/p/151187",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "健康力 高鈣凍 45入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hdc/h29/378822011879454.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Bone-Joint-Support/Dr-Advice-Calcium-Jelly-45-Pack/p/148430",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "更多選擇",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hbd/he2/466199001759774.jpg",
+      "link": "https://www.costco.com.tw/Televisions-Appliances/Small-Appliances/Electric-Toothbrushes-Water-Flossers/Oral-B-Kids-Rechargeable-Electric-Toothbrush-Set-iO-KIDS/p/157501",
       "category": "優惠券特價"
     },
     {
@@ -234,10 +234,10 @@
       "category": "優惠券特價"
     },
     {
-      "name": "CJ Bibigo 芝麻油 1 公升",
+      "name": "威德 靈芝多醣 180粒",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h7d/he5/328848034922526.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Groceries/Cooking-Oil-Sauces/p/151187",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hf1/hfb/29250086567966.jpg",
+      "link": "https://www.costco.com.tw/p/78357",
       "category": "優惠券特價"
     },
     {
@@ -245,6 +245,20 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h18/h4e/261774607384606.jpg",
       "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/PRETZ-Flavors-Stick-Biscuit-Tomato-Vegetable-Herbs-Chicken-12-Pack/p/352414",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "肌研 極潤抗皺緊實高機能精華液 30公克 X 2入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hb6/h9a/398741424439326.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Beauty-Skin-Care/Skin-Care/Hada-Labo-Gokujyun-Aging-Care-Essence-30-g-X-2-Pack/p/153470",
+      "category": "優惠券特價"
+    },
+    {
+      "name": "麗仕 秋韻金木犀輕盈修護洗髮精 400公克 X 3入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/ha2/h32/492247689232414.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Personal-Care/Shampoo-Conditioner/LUX-Osmanthus-Shampoo-400-g-X-3-Pack/p/160482",
       "category": "優惠券特價"
     },
     {
@@ -257,29 +271,15 @@
     {
       "name": "更多選擇",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hbd/he2/466199001759774.jpg",
-      "link": "https://www.costco.com.tw/Televisions-Appliances/Small-Appliances/Electric-Toothbrushes-Water-Flossers/Oral-B-Kids-Rechargeable-Electric-Toothbrush-Set-iO-KIDS/p/157501",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "麗仕 秋韻金木犀輕盈修護洗髮精 400公克 X 3入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/ha2/h32/492247689232414.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Personal-Care/Shampoo-Conditioner/LUX-Osmanthus-Shampoo-400-g-X-3-Pack/p/160482",
-      "category": "優惠券特價"
-    },
-    {
-      "name": "更多選擇",
-      "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h49/hc2/403099850244126.jpg",
       "link": "https://www.costco.com.tw/Clothing-Accessories/Mens-Clothing/Mens-Bottoms/Tommy-Hilfiger-Mens-Chino-Pant-Black/p/8520434-BLK",
       "category": "優惠券特價"
     },
     {
-      "name": "USii 防霾 PM 2.5 高強級靜電紗網",
+      "name": "更多選擇",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h99/hce/310637996277790.jpg",
-      "link": "https://www.costco.com.tw/Furniture-Kitchen/Hardware-DIY/Hardware-Ladders/Usii-Anti-Haze-PM-25-Filter-Windows-Screen-Mesh/p/150694",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h0e/h0a/175901083303966.jpg",
+      "link": "https://www.costco.com.tw/Clothing-Accessories/Mens-Clothing/Mens-Tops/Polo-Ralph-Lauren-Mens-Short-Sleeve-Crew-Neck-Tee-3-Pack-Set/p/1436887",
       "category": "優惠券特價"
     }
   ],
@@ -337,7 +337,7 @@
       "name": "滿意寶寶 哆啦A夢瞬潔乾爽紙尿褲 M號 228片",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/haa/h9a/507674924384286.jpg",
-      "link": "https://www.costco.com.tw/Household-Baby-Toys/p/165002",
+      "link": "https://www.costco.com.tw/Household-Baby-Toys/Baby/Baby-Diapers-Wipes/MamyPoko-Baby-Extra-Dry-Diaper-Doraemon-Edition-Size-M-228-Piece/p/165002",
       "category": "新品上市"
     },
     {
@@ -348,17 +348,17 @@
       "category": "新品上市"
     },
     {
-      "name": "麗仕 秋韻金木犀輕盈修護洗髮精 400公克 X 3入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/ha2/h32/492247689232414.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Personal-Care/Shampoo-Conditioner/LUX-Osmanthus-Shampoo-400-g-X-3-Pack/p/160482",
-      "category": "新品上市"
-    },
-    {
       "name": "更多選擇",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hdb/h16/489126737575966.jpg",
       "link": "https://www.costco.com.tw/Furniture-Kitchen/Kitchen-Dining/Water-Bottles/Blender-Bottle-Stainless-Steel-Shaker-740-ml-X-2-Piece-Set/p/2051529",
+      "category": "新品上市"
+    },
+    {
+      "name": "麗仕 秋韻金木犀輕盈修護洗髮精 400公克 X 3入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/ha2/h32/492247689232414.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Personal-Care/Shampoo-Conditioner/LUX-Osmanthus-Shampoo-400-g-X-3-Pack/p/160482",
       "category": "新品上市"
     },
     {
@@ -372,7 +372,7 @@
       "name": "海倫仙度絲 Head Spa 頭皮頭髮煥活洗護組 洗髮露 435公克 X 1入 + 護髮精華 435公克 X 1入",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hae/h37/520917127069726.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Personal-Care/Shampoo-Conditioner/Head-Shoulders-Anti-Aging-Head-Spa-Set-Shampoo-435-g-X-1-Pack-Treatment-435-g-X-1-Pack/p/252997",
+      "link": "https://www.costco.com.tw/p/252997",
       "category": "新品上市"
     },
     {
@@ -383,17 +383,10 @@
       "category": "新品上市"
     },
     {
-      "name": "更多選擇",
+      "name": "Neoflam Steam+ 陶瓷塗層雙耳四格多功能煎鍋 27公分 含蓋",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h7f/hf7/522091442044958.jpg",
-      "link": "https://www.costco.com.tw/Clothing-Accessories/Kids-Clothing/Kids-Tops/IKALI-Kids-Character-Vest/p/8527894",
-      "category": "新品上市"
-    },
-    {
-      "name": "飛利浦 旋護式攜帶式電鬍刀 RQ912/05",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hbc/h06/509161144746014.jpg",
-      "link": "https://www.costco.com.tw/Televisions-Appliances/Small-Appliances/Hair-Skin-Care-Tools/Philips-Portable-Electric-Shaver-RQ91205/p/163039",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h17/ha3/523257675087902.jpg",
+      "link": "https://www.costco.com.tw/Furniture-Kitchen/Kitchen-Dining/Cookware-Cutlery-Cutting-Boards/Neoflam-Steam-Plus-Ceramic-Two-Handle-Frying-Pan-with-4-Cooking-Holes-27-cm-with-Lid/p/164733",
       "category": "新品上市"
     },
     {
@@ -404,10 +397,10 @@
       "category": "新品上市"
     },
     {
-      "name": "Neoflam Steam+ 陶瓷塗層雙耳四格多功能煎鍋 27公分 含蓋",
+      "name": "更多選擇",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h17/ha3/523257675087902.jpg",
-      "link": "https://www.costco.com.tw/Furniture-Kitchen/Kitchen-Dining/Cookware-Cutlery-Cutting-Boards/Neoflam-Steam-Plus-Ceramic-Two-Handle-Frying-Pan-with-4-Cooking-Holes-27-cm-with-Lid/p/164733",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h7f/hf7/522091442044958.jpg",
+      "link": "https://www.costco.com.tw/Clothing-Accessories/Kids-Clothing/Kids-Tops/IKALI-Kids-Character-Vest/p/8527894",
       "category": "新品上市"
     },
     {
@@ -425,24 +418,17 @@
       "category": "新品上市"
     },
     {
+      "name": "Food超人 幼兒智慧讀卡機 (400雙語單字+138音效)",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hfb/hbb/524432019030046.jpg",
+      "link": "https://www.costco.com.tw/Office-School/Books/Kids-Books/Foodman-Smart-Card-Reader-400-Bilingual-Words-138-Sounds/p/164929",
+      "category": "新品上市"
+    },
+    {
       "name": "CASA 雙人空氣雲高彈力舒棉床墊 152公分 X 190公分 X 8公分",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hf5/h33/522083838296094.jpg",
       "link": "https://www.costco.com.tw/Furniture-Kitchen/Bedding/Mattress-Toppers/CASA-Air-Cloud-High-Resilience-Comfort-Foam-Mattress-Double-Size-152-cm-X-190-cm-X-8-cm/p/163429",
-      "category": "新品上市"
-    },
-    {
-      "name": "Food超人 幼兒智慧讀卡機 (400雙語單字+138音效)",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hfb/hbb/524432019030046.jpg",
-      "link": "https://www.costco.com.tw/Office-School/p/164929",
-      "category": "新品上市"
-    },
-    {
-      "name": "蘭諾 衣物芳香豆 暖白麝香 1860毫升",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h24/h85/523569748607006.jpg",
-      "link": "https://www.costco.com.tw/Household-Baby-Toys/p/164068",
       "category": "新品上市"
     },
     {
@@ -453,17 +439,10 @@
       "category": "新品上市"
     },
     {
-      "name": "成真咖啡 衣索比亞咖啡豆 454公克",
+      "name": "蘭諾 衣物芳香豆 暖白麝香 1860毫升",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h65/522406027526174.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Drinks/Coffee/Come-True-Coffee-Three-Ethiopia-Blend-Coffee-Beans-454-g/p/164075",
-      "category": "新品上市"
-    },
-    {
-      "name": "Tryall Impact 濃縮乳清蛋白 無調味 2.5公斤",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h65/h3a/505689373769758.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Sports-Performance/Whey-Protein-Powder/Tryall-Impact-Whey-Protein-Concentrate-Unflavored-25-kg/p/162927",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h24/h85/523569748607006.jpg",
+      "link": "https://www.costco.com.tw/Household-Baby-Toys/Household-Essentials/Laundry-Care/Lenor-In-Wash-Scent-White-Musk-Booster-1860-ml/p/164068",
       "category": "新品上市"
     },
     {
@@ -474,6 +453,20 @@
       "category": "新品上市"
     },
     {
+      "name": "Tryall Impact 濃縮乳清蛋白 無調味 2.5公斤",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h65/h3a/505689373769758.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Sports-Performance/Whey-Protein-Powder/Tryall-Impact-Whey-Protein-Concentrate-Unflavored-25-kg/p/162927",
+      "category": "新品上市"
+    },
+    {
+      "name": "成真咖啡 衣索比亞咖啡豆 454公克",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h65/522406027526174.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Drinks/Coffee/Come-True-Coffee-Three-Ethiopia-Blend-Coffee-Beans-454-g/p/164075",
+      "category": "新品上市"
+    },
+    {
       "name": "樂維根 經典植物優蛋白 無額外添加糖 芝麻 2.5公斤",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hdb/h38/508720221650974.jpg",
@@ -481,38 +474,17 @@
       "category": "新品上市"
     },
     {
-      "name": "Recolte 食物調理機 RCP-3 (有線版)",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h53/hb6/490481139548190.jpg",
-      "link": "https://www.costco.com.tw/p/162967",
-      "category": "新品上市"
-    },
-    {
-      "name": "Wonder Time 每日堅果 30公克 X 30入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h06/hb8/522215712784414.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Nuts-Jerky/Wonder-Time-Daily-Nuts-30-g-X-30-Count/p/268168",
-      "category": "新品上市"
-    },
-    {
       "name": "雙月 愛恨椒芝麵 1420公克",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hd9/h1d/520916874887198.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Groceries/Rice-Noodles/Moon-Moon-Food-Dry-Noodles-with-Spicy-Sesame-Sauce-1420-g/p/163022",
-      "category": "新品上市"
-    },
-    {
-      "name": "Peanuts 經典卡通舒適毯 152公分 X 177公分",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h79/h3f/504583002882078.jpg",
-      "link": "https://www.costco.com.tw/Furniture-Kitchen/Bedding/Pillows-Comforters-Blankets/Peanuts-Licensed-Velvetloft-Blanket-152-cm-X-177-cm/p/1909196",
+      "link": "https://www.costco.com.tw/Food-Dining/Groceries/p/163022",
       "category": "新品上市"
     },
     {
       "name": "Dr.Reju-All 高效 PDRN 煥顏修護霜 60毫升",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h3e/h24/520192242876446.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Beauty-Skin-Care/Skin-Care/DrReju-All-Advanced-PDRN-Rejuvenating-Cream-Max-60-ml/p/258770",
+      "link": "https://www.costco.com.tw/p/258770",
       "category": "新品上市"
     },
     {
@@ -523,6 +495,20 @@
       "category": "新品上市"
     },
     {
+      "name": "Wonder Time 每日堅果 30公克 X 30入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h06/hb8/522215712784414.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/p/268168",
+      "category": "新品上市"
+    },
+    {
+      "name": "Recolte 食物調理機 RCP-3 (有線版)",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h53/hb6/490481139548190.jpg",
+      "link": "https://www.costco.com.tw/Televisions-Appliances/Kitchen-Appliances/Coffee-Machines-Blenders-Juicers/Recolte-Food-Chopper-RCP-3/p/162967",
+      "category": "新品上市"
+    },
+    {
       "name": "Art Is Coffee 娜玲瓏精選咖啡豆 907公克",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h04/hfc/522406194085918.jpg",
@@ -530,10 +516,10 @@
       "category": "新品上市"
     },
     {
-      "name": "更多選擇",
+      "name": "Peanuts 經典卡通舒適毯 152公分 X 177公分",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h09/h6b/520917030404126.jpg",
-      "link": "https://www.costco.com.tw/Clothing-Accessories/Mens-Clothing/Mens-Tops/The-North-Face-Evolution-Simple-Dome-Mens-Regular-Short-Sleeve-Tee-Black/p/1846555-BLK",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h79/h3f/504583002882078.jpg",
+      "link": "https://www.costco.com.tw/Furniture-Kitchen/Bedding/Pillows-Comforters-Blankets/Peanuts-Licensed-Velvetloft-Blanket-152-cm-X-177-cm/p/1909196",
       "category": "新品上市"
     },
     {
@@ -551,10 +537,10 @@
       "category": "新品上市"
     },
     {
-      "name": "APMEX 可口可樂北極熊 銀幣 999.9純銀 1盎司",
+      "name": "Playgo 果汁機烹飪玩具組 / 3歲以上",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hfe/hc5/523257651789854.jpg",
-      "link": "https://www.costco.com.tw/Jewelry-Gold/22K-24k-Gold/Precious-Metal-Bullion-and-Gold-Bars/APMEX-Coca-Cola-Polar-Bear-Silver-Coin-1-oz/p/162087",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hf4/ha2/519858879070238.jpg",
+      "link": "https://www.costco.com.tw/Household-Baby-Toys/Toys/p/689559",
       "category": "新品上市"
     },
     {
@@ -562,6 +548,20 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hca/h3b/523257807634462.jpg",
       "link": "https://www.costco.com.tw/Food-Dining/Snacks/p/173461",
+      "category": "新品上市"
+    },
+    {
+      "name": "賈以食日 香菜椒麻拌麵 112克*10包",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h16/h34/520917001502750.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Groceries/p/164395",
+      "category": "新品上市"
+    },
+    {
+      "name": "更多選擇",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h09/h6b/520917030404126.jpg",
+      "link": "https://www.costco.com.tw/Clothing-Accessories/Mens-Clothing/Mens-Tops/The-North-Face-Evolution-Simple-Dome-Mens-Regular-Short-Sleeve-Tee-Black/p/1846555-BLK",
       "category": "新品上市"
     }
   ],
@@ -578,7 +578,7 @@
       "name": "Tresanti 電動升降桌",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h9b/h55/329177256460318.jpg",
-      "link": "https://www.costco.com.tw/p/1646074",
+      "link": "https://www.costco.com.tw/Furniture-Kitchen/Furniture/Computer-Desk-Chair-Sets/Tresanti-Adjustable-Desk/p/1646074",
       "category": "限時優惠",
       "online_only": true
     },
@@ -586,7 +586,7 @@
       "name": "Caliphil 雙人加大紐西蘭羊毛被 240公分 X 210公分",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h0d/h21/120184324325406.jpg",
-      "link": "https://www.costco.com.tw/Bedding/p/137369",
+      "link": "https://www.costco.com.tw/Furniture-Kitchen/Bedding/Pillows-Comforters-Blankets/Caliphil-New-Zealand-Wool-Comforter-240-cm-X-210-cm/p/137369",
       "category": "限時優惠",
       "online_only": true
     },
@@ -647,14 +647,6 @@
       "online_only": true
     },
     {
-      "name": "澳佳寶 DHA精粹濃縮深海魚油膠囊 120顆 (60顆 X 2瓶)",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h26/hfc/369280447971358.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Supplements-Digestive-Support/BLACKMORES-OMEGA-DHA-Fish-Oil-120-Capsule-60-Capsule-X-2-Bottle/p/125360",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
       "name": "西雅圖 即品拿鐵 21公克 X 100入",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h57/hce/167692470386718.jpg",
@@ -663,10 +655,10 @@
       "online_only": true
     },
     {
-      "name": "舒適牌 水次元 5 刮鬍刀組 1刀架 + 9刀片",
+      "name": "澳佳寶 DHA精粹濃縮深海魚油膠囊 120顆 (60顆 X 2瓶)",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h69/hc7/241739614191646.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Personal-Care/Mens-Grooming/Schick-Hydro-5-Razor-Set-with-1-Razor-and-9-Cartridges/p/208576",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h26/hfc/369280447971358.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Supplements-Digestive-Support/BLACKMORES-OMEGA-DHA-Fish-Oil-120-Capsule-60-Capsule-X-2-Bottle/p/125360",
       "category": "限時優惠",
       "online_only": true
     },
@@ -675,6 +667,14 @@
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h88/490098123145246.jpg",
       "link": "https://www.costco.com.tw/Household-Baby-Toys/Baby/Baby-Diapers-Wipes/MamyPoko-Diaper-Pants-Doraemon-Edition-Size-XXL-104-Piece/p/626088",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "舒適牌 水次元 5 刮鬍刀組 1刀架 + 9刀片",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h69/hc7/241739614191646.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Personal-Care/Mens-Grooming/Schick-Hydro-5-Razor-Set-with-1-Razor-and-9-Cartridges/p/208576",
       "category": "限時優惠",
       "online_only": true
     },
@@ -711,6 +711,22 @@
       "online_only": true
     },
     {
+      "name": "丹尼船長 米的洋芋片 義大利黑松露口味 50公克 X 8包",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h10/h4f/349175378706462.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Captain-Danny-Rice-Potato-Crisps-Italian-Black-Truffle-Flavor-50g-X-8-Pack/p/246249",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "星巴克 特選系列 中度烘焙咖啡隨手包 2.3公克 X 30包",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h77/h11/186846826627102.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Drinks/Coffee/Starbucks-Premium-Soluble-Medium-Roast-23-g-X-30-Count/p/225971",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
       "name": "手信坊 含餡蛋捲禮盒 480公克",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h65/ha3/238305963311134.jpg",
@@ -719,10 +735,10 @@
       "online_only": true
     },
     {
-      "name": "星巴克 特選系列 中度烘焙咖啡隨手包 2.3公克 X 30包",
+      "name": "可樂果 MiNi濃蒜口味 + 卡迪那 小德薯濃厚茄汁口味 MiNi經典美味雙享組 共18包",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h77/h11/186846826627102.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Drinks/p/225971",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hc2/hb2/221944451825694.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/p/143951",
       "category": "限時優惠",
       "online_only": true
     },
@@ -735,34 +751,10 @@
       "online_only": true
     },
     {
-      "name": "高端食品 藜麥椒鹽蘇打餅 80公克 X 10入",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf0/h93/380783489974302.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/p/108586",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "可樂果 MiNi濃蒜口味 + 卡迪那 小德薯濃厚茄汁口味 MiNi經典美味雙享組 共18包",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hc2/hb2/221944451825694.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Koloko-Pea-Crackers-Cadina-Ketchup-Chips-MiNi-Crunchies-Pack-18-Pack/p/143951",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
       "name": "樂益活 菌護® 保健益生菌 食品 120顆",
       "price": null,
       "image": "https://www.costco.com.tw/medias/sys_master/images/h03/hfe/101049260179486.jpg",
-      "link": "https://www.costco.com.tw/p/97716",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "正官庄 高麗蔘精 EVERYTIME 10毫升 X 30包",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/he9/had/51290114031646.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Supplements-Digestive-Support/JKJ-Red-Ginseng-EVERYTIME-10-ml-X-30-Pack/p/186999",
+      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Supplements-Digestive-Support/MeridLife-Essential-Probiotic-120-Capsule/p/97716",
       "category": "限時優惠",
       "online_only": true
     },
@@ -775,90 +767,18 @@
       "online_only": true
     },
     {
-      "name": "明治 明倍適營養補充杯 草莓少甜 125毫升 X 36入",
+      "name": "正官庄 高麗蔘精 EVERYTIME 10毫升 X 30包",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h29/h51/439613357260830.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Elderly-Care/Nutritional-Drinks/Meiji-Mei-Balance-Mini-Cup-Strawberry-low-sugar-Flavor-125-ml-X-36-Count/p/244328",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/he9/had/51290114031646.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Supplements-Digestive-Support/JKJ-Red-Ginseng-EVERYTIME-10-ml-X-30-Pack/p/186999",
       "category": "限時優惠",
       "online_only": true
     },
     {
-      "name": "益節 葡萄糖胺六合一精華飲 25毫升 X 30包",
+      "name": "高端食品 藜麥椒鹽蘇打餅 80公克 X 10入",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h4e/h1c/384242531794974.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Bone-Joint-Support/Move-Free-Glucosamine-6-in-1-Essence-Drink-25-ml-X-30-Pack/p/142927",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "滿意寶寶 哆啦A夢瞬潔乾爽紙尿褲 L號 192片",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h4f/507674922942494.jpg",
-      "link": "https://www.costco.com.tw/Household-Baby-Toys/Baby/Baby-Diapers-Wipes/MamyPoko-Baby-Extra-Dry-Diaper-Doraemon-Edition-Size-L-192-Piece/p/165003",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "桂格 北海道風味特濃燕麥 42公克 X 48包",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h61/h6f/509161309372446.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Drinks/Powdered-Drink-Mix-Cereal-Oats/Quaker-Extra-Rich-Creamy-Instant-Cereal-42-g-X-48-Count/p/78299",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "Looploop Tag 物品尋找器 AT-10 含配件四入組",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h56/ha5/281047508811806.jpg",
-      "link": "https://www.costco.com.tw/Digital-Mobile/Mobile-Tablets/Mobile-Tablets-Accessories/Looploop-Tag-AT-10-Item-Finders-With-Accessories-4-pack/p/147738",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "滿意寶寶 哆啦A夢瞬潔乾爽紙尿褲 M號 228片",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/haa/h9a/507674924384286.jpg",
-      "link": "https://www.costco.com.tw/Household-Baby-Toys/Baby/Baby-Diapers-Wipes/MamyPoko-Baby-Extra-Dry-Diaper-Doraemon-Edition-Size-M-228-Piece/p/165002",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "補體素 鉻100糖尿病適用配方 1500公克",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hd3/hea/431395560751134.jpg",
-      "link": "https://www.costco.com.tw/Health-Beauty/Elderly-Care/Nutritional-Drinks/Protison-Diabetic-Powder-1500-g/p/993999",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "大成 冷凍椒鹽薄皮炸雞 1.55公斤",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hce/h0e/203141682593822.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/Frozen-Meals/Dachan-Frozen-Lightly-Breaded-Crispy-Fried-Chicken-155-kg/p/143877",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "大拙匠人 鵝油雙葱煎餅 100公克 X 4片X 5包",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h28/hbf/413801340469278.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/Frozen-Meals/Gourmet-Goose-Oil-Shallot-Scallion-Thick-Pancake-100-g-X-4-Piece-X-5-Count/p/156747",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "Witor's 綜合含餡松露造型巧克力 1公斤",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h14/he6/366249722675230.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Candies-Chocolates/Witors-Assorted-Truffle-Shaped-Chocolate-With-Fillings-1-kg/p/246280",
-      "category": "限時優惠",
-      "online_only": true
-    },
-    {
-      "name": "老食粹 有機枸杞 600公克",
-      "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h20/hd7/33758104846366.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Groceries/Baking-Dried-Goods/Lao-Shi-Cui-Organic-Goji-Berry-600-g/p/126818",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hf0/h93/380783489974302.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Snacks/Cookies-Chips/Gao-Duan-Quinoa-Soda-Cracker-80-g-X-10-Pack/p/108586",
       "category": "限時優惠",
       "online_only": true
     },
@@ -871,18 +791,98 @@
       "online_only": true
     },
     {
-      "name": "飛利浦 智能系列三刀頭電鬍刀 S6830/95",
+      "name": "益節 葡萄糖胺六合一精華飲 25毫升 X 30包",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/h85/hf9/436453387698206.jpg",
-      "link": "https://www.costco.com.tw/Televisions-Appliances/Small-Appliances/Hair-Skin-Care-Tools/Philips-AI-Series-Electric-Shaver-S683095/p/157741",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h4e/h1c/384242531794974.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Bone-Joint-Support/Move-Free-Glucosamine-6-in-1-Essence-Drink-25-ml-X-30-Pack/p/142927",
       "category": "限時優惠",
       "online_only": true
     },
     {
-      "name": "王品 冷凍三大名店冷凍火鍋料 1.1公斤",
+      "name": "明治 明倍適營養補充杯 草莓少甜 125毫升 X 36入",
       "price": null,
-      "image": "https://www.costco.com.tw/medias/sys_master/images/hf0/h87/81956503388190.jpg",
-      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/Frozen-Meals/p/131632",
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h29/h51/439613357260830.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Elderly-Care/Nutritional-Drinks/Meiji-Mei-Balance-Mini-Cup-Strawberry-low-sugar-Flavor-125-ml-X-36-Count/p/244328",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "桂格 北海道風味特濃燕麥 42公克 X 48包",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h61/h6f/509161309372446.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Drinks/Powdered-Drink-Mix-Cereal-Oats/Quaker-Extra-Rich-Creamy-Instant-Cereal-42-g-X-48-Count/p/78299",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "滿意寶寶 哆啦A夢瞬潔乾爽紙尿褲 L號 192片",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hab/h4f/507674922942494.jpg",
+      "link": "https://www.costco.com.tw/Household-Baby-Toys/Baby/Baby-Diapers-Wipes/MamyPoko-Baby-Extra-Dry-Diaper-Doraemon-Edition-Size-L-192-Piece/p/165003",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "老食粹 有機枸杞 600公克",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h20/hd7/33758104846366.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Groceries/Baking-Dried-Goods/Lao-Shi-Cui-Organic-Goji-Berry-600-g/p/126818",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "Looploop Tag 物品尋找器 AT-10 含配件四入組",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h56/ha5/281047508811806.jpg",
+      "link": "https://www.costco.com.tw/Digital-Mobile/Mobile-Tablets/Mobile-Tablets-Accessories/Looploop-Tag-AT-10-Item-Finders-With-Accessories-4-pack/p/147738",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "大拙匠人 鵝油雙葱煎餅 100公克 X 4片X 5包",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h28/hbf/413801340469278.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/Frozen-Meals/Gourmet-Goose-Oil-Shallot-Scallion-Thick-Pancake-100-g-X-4-Piece-X-5-Count/p/156747",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "滿意寶寶 哆啦A夢瞬潔乾爽紙尿褲 M號 228片",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/haa/h9a/507674924384286.jpg",
+      "link": "https://www.costco.com.tw/Household-Baby-Toys/Baby/Baby-Diapers-Wipes/MamyPoko-Baby-Extra-Dry-Diaper-Doraemon-Edition-Size-M-228-Piece/p/165002",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "大成 冷凍椒鹽薄皮炸雞 1.55公斤",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hce/h0e/203141682593822.jpg",
+      "link": "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/Frozen-Meals/Dachan-Frozen-Lightly-Breaded-Crispy-Fried-Chicken-155-kg/p/143877",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "補體素 鉻100糖尿病適用配方 1500公克",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/hd3/hea/431395560751134.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Elderly-Care/Nutritional-Drinks/Protison-Diabetic-Powder-1500-g/p/993999",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "善存 舒眠益生菌膠囊 60粒 X 2入",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h06/h09/368495678291998.jpg",
+      "link": "https://www.costco.com.tw/Health-Beauty/Supplements/Supplements-Digestive-Support/Centrum-Probiotics-Sleep-Capsule-60-Capsule-X-2-Pack/p/990255",
+      "category": "限時優惠",
+      "online_only": true
+    },
+    {
+      "name": "飛利浦 智能系列三刀頭電鬍刀 S6830/95",
+      "price": null,
+      "image": "https://www.costco.com.tw/medias/sys_master/images/h85/hf9/436453387698206.jpg",
+      "link": "https://www.costco.com.tw/Televisions-Appliances/Small-Appliances/Hair-Skin-Care-Tools/Philips-AI-Series-Electric-Shaver-S683095/p/157741",
       "category": "限時優惠",
       "online_only": true
     }
